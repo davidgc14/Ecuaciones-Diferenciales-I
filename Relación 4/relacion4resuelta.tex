@@ -1,0 +1,273 @@
+\documentclass[fleqn]{article}
+
+%\pgfplotsset{compat=1.17}
+
+\usepackage{mathexam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{dsfont} %Numeros reales, naturales...
+
+%\graphicspath{{images/}}
+\newcommand*{\QED}{\hfill\ensuremath{\square}}
+
+%Estructura de ecuaciones
+\setlength{\textwidth}{15cm} \setlength{\oddsidemargin}{5mm}
+\setlength{\textheight}{23cm} \setlength{\topmargin}{-1cm}
+
+
+
+\author{David García Curbelo}
+\title{Ecuaciones}
+
+\pagestyle{empty}
+
+
+\def\R{\mathds{R}}
+\def\Z{\mathds{Z}}
+\def\N{\mathds{N}}
+
+\def\sup{$^2$}
+
+
+\begin{document}
+
+    \setcounter{page}{1}
+    \pagestyle{plain}
+    \markright{Relación 4 Ecuaciones Diferenciales}
+
+    \begin{center}
+        {\large\bf{Relación 4 Ecuaciones diferenciales}} \\
+        \bf{Parte 1}\\
+        
+    \end{center}
+
+    \textbf{Ejercicio 1.} \\
+
+    Para comprobar que las funciones de la forma $ x(t) = A\cos(t) + B\sin(t)$ sean solución de la ecuación de orden dos $x'' + x = 0$, estudiemos
+    las derivadas sucesivas de $x(t)$:
+    $$x'(t)= - A\sin(t) + B\cos(t)$$
+    $$ x''(t) = -A\cos(t) - B\sin(t)$$
+    Sustituyendo en la ecuación obtenemos
+    $$x''(t) + x(t) = 0 \Rightarrow -A\cos(t) - B\sin(t) + A\cos(t) + B\sin(t) = 0$$
+    Como vemos que se cumple, podemos afirmar que las funciones de la forma $ x(t) = A\cos(t) + B\sin(t)$ son solución de la ecuación dada $x'' + x = 0$.
+
+    Para el segundo apartado, en el que nos encontramos con la ecuación $x'''+ x' = 0$, la simplificaremos a una ecuación del tipo del apartado anterior
+    y la resolveremos de la misma manera antes vista. Para ello vamos a considerar el siguiente cambio de variable
+    $$y(t)=x'(t) \Rightarrow y''(t)=x'''(t) \Rightarrow y'' + y = 0$$ 
+    La cual es una ecuación como la del apartado anterior. Allí vimos que $y(t)= A\cos(t) + B\sin(t)$ eran las soluciones no triviales para la nueva ecuación.
+    Por tanto, deshaciendo el cambio obtenemos
+    $$y(t)=x'(t)= A\cos(t) + B\sin(t) \Rightarrow x(t) = A\sin(t)-B\cos(t) + C, \quad C \in \R$$ \\ \\
+
+    \textbf{Ejercicio 2.} \\
+    
+    Vamos a resolver este ejercicio mediante reducción al absurdo. Si $x(t)$ es solución del problema de valores iniciales planteado, entonces
+    tiene que cumplirse $tx'-x=0$, y además $x(0)=1$ (con $t=0$), por lo que si sustituimos, la igualdad ha de mantenerse.
+    $$tx'-x=tx'(t)-x(t)=0$$
+    $$tx'(0)-x(0)=0 \Rightarrow t\cdot1 - 1 = 0 \Rightarrow t=1$$
+    Lo cual es una contradicción puesto que hemos partido de la solución para $t_0=0$, por lo tanto hemos llegado a una contradicción y podemos
+    concluir que este problema de valores iniciales carece de solución. \\ \\
+
+    \textbf{Ejercicio 3.} \\
+
+    Nos encontramos ante un problema de valores iniciales, donde la función y sus respectivas condiciones iniciales vienen dadas por 
+    $$x''' + \cos(t)x'' + tx' +t^2x = 0$$
+    $$x(1)=x'(1)=x''(1)=0$$
+    Donde podemos ver que las funciones $ 1$ constante, $\cos(t)$, $t$ y $t^2$ son todas continuas y de clase $C^\infty(\R)$, 
+    particularmente $C^1(\R)$. Entonces, por el Teorema de Existencia y unicidad para las ecuaciones lineales de orden superior, podemos 
+    afirmar que existe una función de la forma $x(t) \in C^3(\R)$ que además es única. 
+    Para proceder al cálculo de dicha solución, basta sustituir los valores iniciales dados en la función anterior. Tomamos $t_0=1$
+    $$x'''(1) + \cos(1)x''(1) + 1x'(1) +1^2x(1) = x'''(1)=0$$
+    $$x'''(1) = 0$$
+
+    Como podemos ver, para $t=1$ obtenemos $$x(1)=x'(1)=x''(1)=x'''(1)=0$$
+    y es fácil ver que una posible solución es la función $x(t)= 0$ constante, ya que cumple tanto las condiciones iniciales como la ecuación
+    de orden superior dada. Y como sabemos por el teorema antes mencionado que la solución
+    es única, podemos afirmar que tenemos la solución al problema de valores iniciales anteriormente planteado, dada por la función $x(t)= 0$ constante.\\ \\
+
+    \textbf{Ejercicio 4.} \\
+
+    Veamos si la función $x(t)= t^2e^t$ es solución de la ecuación lineal homogénea de orden 2. Para ello, supondremos que es solución y veremos si llegamos
+    a una contradicción o no. Estudiemos sus derivadas sucesivas para poder sustituir en la ecuación
+    $$x(t)= e^tt^2 \quad x'(t)= e^t(t^2 + 2t) \quad x''(t)= e^t(t^2 + 4t + 2)$$
+    Sustituimos ahora en la ecuación $x'' + a_1x' + a_0x = 0$, con lo que obtenemos
+    $$e^t(t^2 + 4t + 2) + e^ta_1(t^2 + 2t) + e^ta_0t^2 = 0 \Rightarrow (t^2 + 4t + 2) + a_1(t^2 + 2t) + a_0t^2 = 0 \Rightarrow a_0=-\frac{t^2 + 4t + 2 + a_1(t^2 + 2t)}{t^2}$$
+    Con la que obtenemos una relación directa entre ambas funciones $a_0$ y $ a_1$, en la que podemos ver que el dominio en el que está definida no puede incluir
+    ciertos puntos, por lo que no están definidas en $\R$. Tomando uno de estos puntos, por ejemplo el $t=0$, vemos que $x(0)=e^00^2=0$, por lo que dicha función 
+    sí está definida en este punto, pero si sustituimos en la ecuación
+    $$e^t(t^2 + 4t + 2) + e^ta_1(t^2 + 2t) + e^ta_0t^2 = 0, \quad con \quad t=0 \Rightarrow 2=0$$
+    Por lo que concluimos que $x(t)= e^tt^2$ no es solución de la ecuación lineal homogénea de segundo orden.\\ \\
+
+    \textbf{Ejercicio 5.} \\
+    
+    Partimos de que tanto $e^t$ como $e^-t$ son soluciones de nuestra ecuación de segundo orden $x'' + a_1x' + a_0x=0$. Si es así, entonces 
+    \begin{itemize}
+        \item $$x(t)=e^t \Rightarrow x''(t)=x'(t)=x(t)=e^t$$
+                $$e^t + a_1e^t + a_0e^t = 0$$
+        \item $$x(t)=e^{-t} \Rightarrow x''(t)=x(t)=e^t \quad x'(t)=-e^{-t}$$
+                $$e^{-t} - a_1e^{-t} + a_0e^{-t} = 0$$
+    \end{itemize}
+    
+    Con lo que obtenemos el siguiente sistema, que nos ayudará a calcular las funciones $a_0$ y $ a_1$ para poder estudiar el intervalo en el que 
+    están definidas (y ver así si se trata de $I=\R$ o no):
+    \begin{equation*}
+        \left.
+        \begin{aligned}
+            e^t + a_1e^t + a_0e^t = 0 \\
+            e^{-t} - a_1e^{-t} + a_0e^{-t} = 0
+        \end{aligned}
+        \right\} \Rightarrow a_0=-1, \quad a_1=0
+    \end{equation*}
+    Con estas funciones dadas de $a_0$ y $ a_1$ obtenemos la ecuación de segundo orden $x'' - x=0$, y por lo tanto $I=\R$.\\ \\
+
+    \textbf{Ejercicio 6.} \\
+
+    Como en el ejercicio anterior, partimos de que tanto $t$ como $et^2$ son soluciones de nuestra ecuación de segundo orden 
+    $x'' + a_1x' + a_0x=0$. Si es así, entonces 
+    \begin{itemize}
+        \item $$x(t)=t \Rightarrow x''(t)=0, \quad x'(t)=1$$
+                $$0 + a_1 + a_0t = 0$$
+        \item $$x(t)=t^2 \Rightarrow x''(t)=2, \quad x'(t)=2t$$
+                $$2 + a_12t + a_0t^2 = 0$$
+    \end{itemize}
+
+    Con lo que obtenemos el siguiente sistema, que nos ayudará a calcular las funciones $a_0$ y $ a_1$ para poder estudiar el intervalo en el que 
+    están definidas (y ver así si se trata de $I=\R$ o no):
+    \begin{equation*}
+        \left.
+        \begin{aligned}
+            a_1 + a_0t = 0 \\
+            2 + a_12t + a_0t^2 = 0
+        \end{aligned}
+        \right\} 
+    \end{equation*}
+
+    Una primera observación que se le puede hacer a este sistema es que $t$ no puede tomar el valor $0$, ya que si esto fuera así, el sistema no tendría
+    solución (en el sistema, la segunda ecuación nos quedaría $2=0$). Por tanto ya podríamos afirmar que el intervalo $I\neq\R$, ya que el cero no se 
+    encuentra en el dominio. Aun así calculemos las posibles soluciones de $a_0$ y $ a_1$, y tratemos de encontrar el intervalo $I$ en el que está 
+    definida la ecuación. Por ello, considerando $t\neq 0$ obtenemos
+    $$a_1,a_0: I \longrightarrow \R, \quad a_1=-\frac{2}{t}, \quad a_0=\frac{2}{t^2}$$
+    Y concluimos que el intervalo $I$ puede ser cualquier abierto de la forma $I \subset \R - \{0\}$. \\ \\
+
+    \textbf{Ejercicio 7.} \\
+
+    Para el primer apartado, suponemos por hipótesis que existe un $t_0 \in \R$ tal que $W(f_1,f_2,f_3)(t_0) > 0$, donde ${f_1,f_2,f_3}$ sea un sistema fundamental
+    de la ecuación dada $x''' + tx'' + a_1(t)x' + e^tx = 0$. Consideramos por tanto el Wronskiano  $W(f_1,f_2,f_3)(t)$ para un $t \geq t_0$, y usando la fórmula de 
+    Lioville dada por
+    $$W(f_1,f_2,f_3)(t) = W(f_1,f_2,f_3)(t_0) e^{-\int_{t_0}^t a_2(s)\thinspace ds}$$
+    donde vemos en nuestra ecuación que $a_2(t)=t$, y que por tanto $-\int_{t_0}^t a_2(s)\thinspace ds = \frac{1}{2}(t_0^2 - t^2)$, y por tanto obtenemos
+    $$W(f_1,f_2,f_3)(t_0) e^{\frac{1}{2}(t_0^2 - t^2)}, \quad t\geq t_0$$
+
+    Para el segundo apartado estudiemos el límite dado por $\lim_{t\rightarrow\infty} W(f_1,f_2,f_3)(t)$. Para ello sustituimos el resultado obtenido en el apartado
+    anterior, y el Wronskiano deja de tener la dependencia en $t$, para que el cálculo del límite sea más sencillo:
+    $$\lim_{t\rightarrow\infty} W(f_1,f_2,f_3)(t) = \lim_{t\rightarrow\infty} W(f_1,f_2,f_3)(t_0)  e^{\frac{1}{2}(t_0^2 - t^2)} = $$
+    $$\lim_{t\rightarrow\infty} W(f_1,f_2,f_3)(t_0) e^{\frac{t_0^2}{2}} e^{-\frac{t^2}{2}} = W(f_1,f_2,f_3)(t_0) e^{\frac{t_0^2}{2}} \cdot\lim_{t\rightarrow\infty}  e^{-\frac{t^2}{2}} =
+    W(f_1,f_2,f_3)(t_0) e^{\frac{t_0^2}{2}} \cdot 0 = 0$$ \\ \\
+
+    \textbf{Ejercicio 8.} \\
+
+    Para este ejercicio, buscaremos una solución $f_2$ para la ecuación de segundo orden $x''-x=0$ usando la fórmula de Lioville usada también en el ejercicio anterior:
+    $$W(f_1,f_2,f_3)(t) = W(f_1,f_2,f_3)(t_0) e^{-\int_{t_0}^t a_{k-1}(s)\thinspace ds}$$
+    Siendo $k$ el orden de la ecuación (que en nuestro caso es $k=2$, y por tanto $a_1(t)=0$). Por definición del Wronskiano, construimos los respectivos determinantes y obtenemos
+    $$
+        \left|
+        \begin{matrix}
+            e^t & f_2(t) \\
+            e^t & f_2'(t)
+        \end{matrix}
+        \right| = 
+        \left|
+        \begin{matrix}
+            e^{t_0} & f_2(t_0) \\
+            e^{t_0} & f_2'(t_0)
+        \end{matrix}
+        \right|
+        \cdot e^{-\int_{t_0}^t 0\thinspace ds}
+    $$   
+    $$e^tf_2'(t) - e^tf_2(t) = e^{t_0} f_2'(t_0) - e^{t_0} f_2(t_0) = m$$
+    Donde podemos ver que el segundo termino de la igualdad es una constante que denotaremos por $m$, ya que no tiene dependencia en $t$. Resolvemos por tanto la ecuación lineal 
+    de primer orden dada por $e^tf_2'(t) - e^tf_2(t) = m$. Para ello utilizaremos técnicas vistas en el tema anterior para la resolución de ecuaciones diferenciales completas de primer orden.
+    Por ello buscaremos primero una solución de la homogénea, y posteriormente buscaremos una solución particular para obtener todo el espacio de soluciones.
+    \begin{itemize}
+        \item Resolvemos la ecuación homogénea 
+                $$e^tf_2'(t) - e^tf_2(t) = 0 \quad \Rightarrow \quad \frac{f_2'(t)}{f_2(t)}=1$$
+                La cual vemos que se trata de una ecuación de variables separadas. Integrando en ambos lados obtenemos
+                $$\int \frac{f_2'(t)}{f_2(t)} \thinspace dt = \int 1 \thinspace dt \quad \Rightarrow \quad f_2(t) = Ke^t$$
+        \item Buscamos ahora una función $K(t)$ para que $f_2(t) = K(t)e^t$ sea solución de la ecuación completa. Para ello derivemos la ecuación obtenida en ambas partes de la igualdad
+                $$f_2'(t) = K(t)e^t +K'(t)e^t$$
+                Como sabemos que $f_2$ es solución de la ecuación $e^tf_2'(t) - e^tf_2(t) = m$, sustituimos y obtenemos
+                $$m = e^t \left(K(t)e^t + K'(t)e^t - K(t)e^t \right) = K'(t)e^{2t} \quad \Rightarrow \quad K'(t)=e^{-2t}m \quad \Rightarrow \quad K(t)=-\frac{m}{2}e^{-2t} + C$$
+                Y llegamos por tanto a la ecuación
+                $$f_2(t) = -\frac{m}{2}e^{-2t}\cdot e^t + C\cdot e^t = -\frac{m}{2}e^{-t} + C e^t$$
+                La cual vemos que es la solución general de todas las soluciones para este problema. Tomando ahora particularmente $m=-2$ y $C=0$ obtenemos la solución particular 
+                $$f_2(t)=e^{-t}$$
+                La cual es fácil ver que cumple la ecuación diferencial de segundo orden dada.\\ \\
+    \end{itemize}
+
+    \textbf{Ejercicio 9.} \\
+
+    \framebox{$\Rightarrow$}
+    Que $x_1$ y $x_2$ sean linealmente dependientes significa que existen $\lambda_1, \thinspace \lambda_2 \neq 0$ tal que $\lambda_1x_1 + \lambda_2x_2 = 0$,
+    o lo que es lo mismo, existe un $\lambda \neq 0$ tal que $x_2=\lambda x_1$. Por lo tanto, el Wronskiano viene dado por 
+    $$W(x_1,x_2)(t) = \left|
+    \begin{matrix}
+        x_1(t) & x_2(t) \\
+        x_1'(t) & x_2'(t) \\
+    \end{matrix}
+    \right|= \left|
+    \begin{matrix}
+        x_1(t) & \lambda x_1(t) \\
+        x_1'(t) & \lambda x_1'(t) \\
+    \end{matrix}
+    \right| = x_1'(t)\lambda x_1(t) - x_1'(t)\lambda x_1(t)=0, \quad \forall t \in I
+    $$
+Con lo que obtenemos que el Wronskiano es nulo cuando  $x_1$ y $x_2$ son linealmente dependientes.
+
+\framebox{$\Leftarrow$} Razonamos de manera similar al apartado anterior. Partimos de que el Wronskiano es nulo:
+$$W(x_1,x_2)(t) = \left|
+\begin{matrix}
+    x_1(t) & x_2(t) \\
+    x_1'(t) & x_2'(t) \\
+\end{matrix}
+\right|=0 \quad \Rightarrow \quad x_1(t) x_2'(t) - x_1'(t)\lambda x_2(t)=0, \quad \forall t \in I$$
+Con lo que obtenemos un tipo de ecuación diferencial que sabemos resolver. Suponiendo $x_1,x_2 \neq 0$ obtenemos lo que sigue
+(es lógico suponer esto ya que si alguna de las dos fuera nula, ambas serían linealmente dependientes 
+y por tanto habríamos acabado el ejercicio)
+$$\frac{x_1'(t)}{x_1(t)}=\frac{x_2'(t)}{x_2(t)} \quad \Rightarrow \quad  \int \frac{x_1'(t)}{x_1(t)} dt=\int \frac{x_2'(t)}{x_2(t)} dt
+\quad \Rightarrow \quad \ln x_1(t) = \ln x_2(t) +C, \quad C\in\R$$
+Por lo tanto, mediante cálculos elementales llegamos a la igualdad $x_1(t)=k\cdot x_2(t)$ y por lo tanto deducimos que  $x_1$ y $x_2$ son linealmente dependientes.\\ \\
+
+\textbf{Ejercicio 10.} \\
+
+Existen muchas maneras de resolver este ejercicio, pero nosotros desarrollaremos la idea mas intuitiva y más lógica. Como queremos ver si $f_1(t) = e^t$ y $f_2(t)=\sin (t)$
+pueden ser soluciones de la ecuación de segundo orden, supongamos por hipótesis que lo son. Si es así, sólo hace falta sustituir en nuestra ecuación 
+las derivadas sucesivas de nuestras dos candidatas a solución (queremos que sean solución de la misma ecuación lineal de segundo orden).
+\begin{equation*}
+    \left.
+    \begin{aligned}
+        e^t + e^ta_1 + e^t a_0 = 0 \\
+        -\sin + \cos(t)a_1 + \sin(t)a_0=0
+    \end{aligned}
+    \right\} \quad \Rightarrow \quad a_0(t)=\frac{\sin(t) + \cos(t)}{\sin(t) - \cos(t)}, \quad a_1(t)=\frac{2\sin(t)}{\sin(t) - \cos(t)} \thinspace \forall t \in I
+\end{equation*}
+Estos valores de $a_0$ y $a_1$ son sólo válidos cuando se cumpla la condición $\sin(t) \neq \cos(t)$, es decir, para todo $t \neq \frac{\pi}{4} + \pi K, \thinspace K \in \Z$.
+Es decir, la ecuación lineal completa de segundo orden dada por 
+$$x'' + x'\frac{2\sin(t)}{\sin(t) - \cos(t)} + x\frac{\sin(t) + \cos(t)}{\sin(t) - \cos(t)}$$
+tendrá como solución $f_1(t) = e^t$ y $f_2(t)=\sin (t)$ simultáneamente cuando esté definida en intervalos abiertos y conexos de la forma 
+$$I = \left(\frac{\pi}{4} + \pi K, \frac{\pi}{4} + \pi (K+1)\right), \quad K \in \Z$$
+Por lo tanto podemos afirmar que las funciones $f_1(t) = e^t$ y $f_2(t)=\sin (t)$ pueden ser solución de la ecuación lineal completa siempre que dicha ecuación
+esté definida en un intervalo como el que acabamos de ver.\\ \\
+
+\textbf{Ejercicio 11.} \\
+
+
+
+
+
+\end{document}

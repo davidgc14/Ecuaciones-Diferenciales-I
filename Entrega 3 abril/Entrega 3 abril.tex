@@ -1,0 +1,93 @@
+\documentclass[fleqn]{article}
+
+
+\usepackage{mathexam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{dsfont} %Numeros reales, naturales...
+
+\graphicspath{{images/}}
+\newcommand*{\QED}{\hfill\ensuremath{\square}}
+
+%Estructura de ecuaciones
+%\setlength{\textwidth}{17cm} \setlength{\oddsidemargin}{-10mm}
+%\setlength{\textheight}{25cm} \setlength{\topmargin}{-2cm}
+
+\author{David García Curbelo}
+\title{Probabilidad}
+
+\pagestyle{empty}
+
+
+\def\R{$\mathds{R}$}
+\def\sup{$^2$}
+
+\begin{document}
+
+
+    \begin{center}
+        {\large\bf{Ejercicios para entregar. Ecuaciones diferenciales, 3/04}} \\
+        %\bf{David García Curbelo}\\
+        
+    \end{center}
+    
+    {\bf{Ejercicio 3.2.3.}} \textit{¿Qué ocurre si repetimos el proceso del ejemplo anterior a las funciones $P(x,y)=e^x$ y $Q(x,y)=e^y + x $?}\\
+    
+    {\bf{Solución}}  Consideramos $P(x,y)=e^x$ y $Q(x,y)=e^y + x $. Ambas funciones están definidas en \R\sup, el cual sabemos que es un dominio estrellado.
+    Veamos si se cumple la condición de exactitud.
+    $$\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}$$
+    Como $\frac{\partial P}{\partial y}=0$ y $\frac{\partial Q}{\partial x}=1$ observamos que no se cumple la condición de exactitud mencionada, 
+    y por tanto no se cumplirá la Proposición 3.2.1., es decir, no se cumple la condición
+    $$\frac{\partial U}{\partial x}(x,y)=P(x,y), \frac{\partial U}{\partial y}(x,y)=Q(x,y)$$
+    y por ello podemos afirmar que no existe $U$ bajo las condiciones de $P(x,y)$ y $Q(x,y)$ enunciadas.\\
+    
+    Otra forma de Solucionar el problema es realizando las cuentas del ejemplo anterior y comprobando que se llega a contradicción. Para ello debemos de suponer
+    que la condición de exactitud se cumple, con lo que procedemos a calcular $U$ mediante integración.
+    $$U(x,y)=\int P(x,y) dx + f(y) = \int e^x dx + f(y) = e^x + f(y)$$
+    $$U(x,y)=\int Q(x,y) dy + f(x) = \int (e^y + x)dy + f(x) = e^y + xy + f(x)$$
+    Podemos ver fácilmente que $f(x)=e^x$, pero para $f(y)$ no queda tan claro ya que tendríamos que tomar $f(y)=e^y + xy$, la cual no depende únicamente de $y$,
+    luego llegamos a una contradicción. Por ello, no existe un potencial para las condiciones de $P(x,y)$ y $Q(x,y)$ enunciadas.\QED
+
+    \newpage
+    {\bf{Ejercicio 3.2.4.}} \textit{Consideramos $P(x,y)=e^x + 2y$ y $Q(x,y)=2x + \cos(y) $. Determina U como indica el teorema 3.2.1, es decir, calcula
+    $$U(x,y)=x\int _{0}^{1} P(\lambda x, \lambda y) d\lambda + y\int _{0}^{1} Q(\lambda x, \lambda y) d\lambda $$
+    Calcula las derivadas parciales empleando el Lema 3.2.1.}\\
+
+    {\bf{Solución}} Consideramos $P(x,y)=e^x + 2y$ y $Q(x,y)=2x + \cos(y) $. Ambas funciones están definidas en \R\sup, el cual sabemos que es un dominio 
+    estrellado. Sabemos además por el ejemplo anterior que estas dos funciones cumplen la condición de exactitud. Procedamos al cálculo de U mediante 
+    la integral
+    $$\int _{0}^{1} xP(\lambda x, \lambda y) + yQ(\lambda x, \lambda y) d\lambda$$
+    $$\int _{0}^{1} xe^{x\lambda} d\lambda +\int _{0}^{1} 2xy\lambda d\lambda + \int _{0}^{1} 2xy\lambda d\lambda + \int _{0}^{1} y\cos(y\lambda) d\lambda$$
+    $$x\int _{0}^{1} e^{x\lambda} d\lambda + 4xy\int _{0}^{1} \lambda d\lambda + y\int _{0}^{1} \cos(y\lambda) d\lambda$$
+    $$[x \frac{1}{x} e^{x\lambda}+2xy\lambda^2+y\frac{1}{y} \sin(y\lambda)]_{0}^{1} = e^x + 2xy + \sin(y) - 1$$
+    El cual vemos que se trata de la solución que buscábamos, con la constante $C=-1$,
+    $$U(x,y)= e^x + 2xy + \sin(y) - 1$$
+    
+    Para el segundo apartado, calcularemos las derivadas parciales de $U(x,y)$ y veremos que se verifica $\frac{\partial U(x,y)}{\partial x}=P(x,y)$,
+    $\frac{\partial U(x,y)}{\partial y}=Q(x,y)$. Aplicamos para ello el Lema 3.2.1. por el cual partiendo de
+    $$U(x,y)=\int _{0}^{1} xP(\lambda x, \lambda y) + yQ(\lambda x, \lambda y) d\lambda$$
+    y aplicando el lema obtenemos
+    $$\frac{\partial U(x,y)}{\partial x}=\int _{0}^{1} \frac{\partial}{\partial x}(xP(\lambda x, \lambda y) + yQ(\lambda x, \lambda y)) d\lambda$$
+    $$\frac{\partial U(x,y)}{\partial x}=\int _{0}^{1} P(\lambda x, \lambda y) d\lambda + x\int _{0}^{1} \lambda \frac{\partial}{\partial x} P(\lambda x, \lambda y) d\lambda + y\int _{0}^{1} \lambda \frac{\partial}{\partial x} Q(\lambda x, \lambda y)) d\lambda$$
+    
+    Sustituimos a continuación las respectivas funciones P y Q. Como sabemos que se cumple la condición de exactitud,
+    tenemos
+    $$\frac{\partial U(x,y)}{\partial x}=\int _{0}^{1} P(\lambda x, \lambda y) d\lambda + x\int _{0}^{1} \lambda \frac{\partial}{\partial x} P(\lambda x, \lambda y) d\lambda + y\int _{0}^{1} \lambda \frac{\partial}{\partial y} P(\lambda x, \lambda y) d\lambda$$
+    $$\frac{\partial U(x,y)}{\partial x}=\int _{0}^{1} (e^{x\lambda} + 2y\lambda) d\lambda + x\int _{0}^{1} \lambda \frac{\partial}{\partial x} (e^{x\lambda} + 2y\lambda) d\lambda + y\int _{0}^{1} \lambda \frac{\partial}{\partial y} (e^{x\lambda} + 2y\lambda) d\lambda$$
+
+    Ahora, mediante $\frac{dP}{\lambda d}(\lambda x, \lambda y)=x \frac{\partial}{\partial x} P(\lambda x, \lambda y) + y \frac{\partial}{\partial y} P(\lambda x, \lambda y)$ obtenemos
+    $$\frac{\partial U(x,y)}{\partial x}=\int _{0}^{1} (e^{x\lambda} + 2y\lambda) d\lambda + \int _{0}^{1} \lambda \frac{d}{\lambda d}(e^{x\lambda} + 2y\lambda) d\lambda$$
+    $$\frac{\partial U(x,y)}{\partial x}=\left(\frac{e^x - 1}{x} + y\right) + \left(e^x + \frac{1 - e^x}{x} + y\right)$$
+    
+    $$\frac{\partial U(x,y)}{\partial x}=e^x + 2y = P(x,y)$$
+
+    Como queríamos probar. Para $Q(x,y)$ el proceso sería el mismo. \QED
+
+\end{document}

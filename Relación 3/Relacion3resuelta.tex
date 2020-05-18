@@ -1,0 +1,215 @@
+\documentclass[fleqn]{article}
+
+%\pgfplotsset{compat=1.17}
+
+\usepackage{mathexam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{dsfont} %Numeros reales, naturales...
+
+%\graphicspath{{images/}}
+\newcommand*{\QED}{\hfill\ensuremath{\square}}
+
+%Estructura de ecuaciones
+\setlength{\textwidth}{15cm} \setlength{\oddsidemargin}{5mm}
+\setlength{\textheight}{23cm} \setlength{\topmargin}{-1cm}
+
+
+
+\author{David García Curbelo}
+\title{Ecuaciones}
+
+\pagestyle{empty}
+
+
+\def\R{\mathds{R}}
+\def\sup{$^2$}
+
+
+\begin{document}
+
+    \setcounter{page}{1}
+    \pagestyle{plain}
+    \markright{Relación 3 Ecuaciones Diferenciales}
+
+    \begin{center}
+        {\large\bf{Relación 3 Ecuaciones diferenciales}} \\
+        %\bf{David García Curbelo}\\
+        
+    \end{center}
+
+
+    {\bf{Ejercicio 1.}} \\
+
+    Es fácil ver que $F(x)$ es derivable. Por ello tomamos $F(x)=\int_0^1 e^{\theta x^2} \cos^2 (\theta) d\theta$,
+    $$F'(x)=\frac{\partial}{\partial x}\int_0^1 e^{\theta x^2} \cos^2 (\theta) d\theta = 
+    \int_0^1 \frac{\partial}{\partial x} e^{\theta x^2} \cos^2 (\theta) d\theta
+    = \int_0^1 2x\theta e^{\theta x^2} \cos^2 (\theta) d\theta$$
+    Sustituimos ahora el valor $x=0$ en $F'(x)$, y obtenemos
+    $$F'(0)=\int_0^1 2 \cdot 0 \cdot \theta e^{\theta \cdot 0^2} \cos^2 (\theta) d\theta = 
+    \int_0^1 0 d\theta = 0$$ \QED \\ \\
+
+    {\bf{Ejercicio 2.}} \\
+
+    Para comprobar que una ecuación sea exacta, debemos verificar primero que se cumple la condición de exactitud,
+    es decir, ha de cumplirse la igualdad $\frac{\partial P(x,y)}{\partial y}=\frac{\partial Q(x,y)}{\partial x}$.
+    Dada la ecuación $\frac{e^x}{y+e^x} + 2x + \frac{1}{y+e^x}y' = 0$ tomamos $P(x,y)=\frac{e^x}{y+e^x} + 2x$, 
+    $Q(x,y)=\frac{1}{y+e^x}$. 
+    $$\frac{\partial P(x,y)}{\partial y}=\frac{-e^x}{(y+e^x)^2}=\frac{\partial Q(x,y)}{\partial x}$$
+    Como se cumple la condición de exactitud, la ecuación es exacta. \\
+    
+    Para el segundo apartado, vamos a encontrar la solución al problema de valores iniciales con condición inicial
+    $y(0)=0$. Vemos que en este caso $Q(x,y)\neq 0, \forall (x,y) \in \Omega$, con $y+e^x \neq 0$. Como con nuestra
+    condición inicial $Q \neq 0$ y sabemos que nuestro dominio es estrellado, podemos afirmar la existencia de potencial
+    en todo el dominio. Procedemos a calcularlo:
+    $$U(x,y)=\int P(x,y) dx +f(y)= \int (\frac{e^x}{y+e^x} + 2x)dx + f(y) = ln(y+e^x) + x^2 +f(y)$$
+    Como $\frac{\partial U(x,y)}{\partial y}=Q(x,y)$, tenemos
+    $$\frac{1}{y+e^x} + f'(y)=\frac{1}{y+e^x}$$
+    y por tanto $f'(y)=0$, es decir $f(y)$ es constante, luego 
+    $$U(x,y)=ln(y+e^x) + x^2+C$$
+    Como $U$ se conserva a lo largo de todas las soluciones del dominio, (y tenemos que $y(0)=0$) podemos afirmar que
+    $$U(x,y)=U(0,y(0))=U(0,0)$$
+    $$ln(y+e^x) + x^2=0$$
+    Despejando $y(x)$ obtenemos
+    $$y(x)=e^{-x^2}-e^x, \forall x \in \mathds{R}$$
+    \QED \\ \\
+
+    {\bf{Ejercicio 3.}} \\
+
+    Sabemos por hipótesis que tanto $P$ como $Q$ son ambas diferenciables. Por el teorema fundamental del cáclulo podemos obtener
+    $$\frac{\partial U}{\partial x}=\frac{\partial }{\partial x} \int _0^x P(s,y) ds = P(x,y)$$
+    $$\frac{\partial U}{\partial y}=\frac{\partial }{\partial y} \int _0^y Q(0,s) ds + \frac{\partial }{\partial y} \int _0^x P(s,y) ds =
+    Q(0,y)+ \int _0^x \frac{\partial }{\partial y}P(s,y) ds$$
+    Como por hipótesis sabemos que $\frac{\partial U}{\partial y}=\frac{\partial Q}{\partial x}$, entonces tenemos
+    $$\frac{\partial U}{\partial y}=Q(0,y)+ \int _0^x \frac{\partial }{\partial x}Q(s,y) ds=Q(x,y)$$
+    como queríamos probar. \QED \\ \\
+
+    {\bf{Ejercicio 4.}} \\
+
+    Nos encontramos ante un problema de valores iniciales, donde $P(x,y)=y-4x^3$ y $Q(x,y)=2y+x$, ambas continuas y diferenciables
+    en todo su dominio ($\Omega = \mathds{R}^2$). Vemos que se cumple la condición de exactitud, ya que 
+    $\frac{\partial P}{\partial y}=1=\frac{\partial Q}{\partial x}$, luego como se trata de un dominio estrellado y además 
+    cumple la condición de exactitud, podemos afirmar la existencia de potencial. Además podemos afirmar que, como $Q(x_0, y(x_0))\neq 0$, 
+    sabemos que existe un intervalo maximal en el que estará definida la función, y por lo tanto tendrá solución. Procedamos a calcularlo:
+    $$U(x,y)=\int P(x,y) dx +f(y)= \int (y-4x^3)dx + f(y) = yx - x^4 + f(y)$$
+    Como $\frac{\partial U(x,y)}{\partial y}=Q(x,y)$, tenemos
+    $$x + f'(y)=2y+x$$
+    Y por lo tanto $f(y)=y^2+C$ donde $C$ es una constante real. Obtenemos por tanto que el potencial queda de la forma
+    $$U(x,y)= yx - x^4 + y^2 + C$$
+    Aplicamos a continuación la condición inicial  $y(0)=-1$. Además como $U$ se conserva a lo largo de todas las soluciones del dominio,
+    podemos afirmar que $$U(x,y)=U(0,y(0))=U(0,-1)$$
+    $$yx - x^4 + y^2=1$$
+    $$y(x)=\frac{-x \pm \sqrt{x^2 +4(x^4+1)}}{2}$$
+    Pero como sabemos que $y(0)=-1$, concluimos que la solución viene dada por 
+    $$y(x)=-\frac{x + \sqrt{x^2 +4(x^4+1)}}{2}, \forall x \in \mathds{R}$$
+    \QED \\ \\
+
+    {\bf{Ejercicio 5.}} \\
+
+    Nos encontramos ante otro problema de valores iniciales como el planteado en el ejercicio anterior, donde $P(x,y)=e^{x-1} + y$ y $Q(x,y)=x$, 
+    ambas continuas y diferenciables en todo su dominio ($\Omega = \mathds{R}^2$). Vemos que se cumple la condición de exactitud, ya que 
+    $\frac{\partial P}{\partial y}=1=\frac{\partial Q}{\partial x}$, luego como se trata de un dominio estrellado y además 
+    cumple la condición de exactitud, podemos afirmar la existencia de potencial. Procedamos a calcularlo:
+    $$U(x,y)=\int P(x,y) dx +f(y)= \int (e^{x-1} + y)dx + f(y) = e^{x-1} + yx + f(y)$$
+    Como $\frac{\partial U(x,y)}{\partial y}=Q(x,y)$, tenemos
+    $$x + f'(y)=x$$
+    y por tanto $f'(y)=0$, es decir $f(y)$ es constante, luego
+    $$U(x,y)=e^{x-1} + yx + C$$
+    Como $U$ se conserva a lo largo de todas las soluciones del dominio, (y tenemos que $y(1)=0$) podemos afirmar que
+    $$U(x,y)=U(1,y(1))=U(1,0)$$
+    $$e^{x-1} + yx = 1$$
+    Despejando $y(x)$ obtenemos
+    $$y(x)=\frac{1-e^{x-1}}{x}, \forall x \in \mathds{R}-(0)$$ 
+    \QED \\ \\
+
+    {\bf{Ejercicio 6.}} \\
+
+    Supongamos existe dicho factor integrante $\mu(x,y)=m(x+2y)$ para el que se cumple por tanto la condición 
+    $\frac{\partial (\mu P)}{\partial y}=\frac{\partial (\mu Q)}{\partial x}$, es decir, la condición de exactitud para
+    $\mu (P + Qy')=0$. Desarrollemos cada uno de los elementos de la igualdad:
+    $$\frac{\partial (\mu P)}{\partial y}=\frac{\partial (\mu Q)}{\partial x}$$
+    $$P\frac{\partial \mu}{\partial y} + \mu \frac{\partial P}{\partial y}=Q\frac{\partial \mu}{\partial x} + \mu \frac{\partial Q}{\partial x}$$
+    $$P\frac{\partial \mu}{\partial y}-Q\frac{\partial \mu}{\partial x}=\mu (\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})$$
+    $$P(2m)-Q(m)=m(x+2y) (\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})$$
+    $$2P-Q=(x+2y) (\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})$$
+    $$\frac{2P-Q}{\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}}=x+2y $$
+    Donde suponemos que $\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \neq 0$ (es decir, que no se cumpla la condición de exactitud,
+    ya que si se cumpliera no nos haría falta ningún factor integrante). Y por lo tanto tenemos la condición para la existencia de dicho potencial.
+    Vemos que las constantes que multiplican en el factor integrante no son relevantes, ya que no influyen en las condiciones del mismo 
+    para su existencia.\QED \\ \\
+    
+    \newpage
+
+    {\bf{Ejercicio 7.}} \\
+
+    Para este ejercicio, antes de buscar el factor integrante, comprobemos que ciertamente no se cumple la condición de exactitud. Tomamos 
+    $P(t,x)=2t+t^2x$, $Q(t,x)=1$. Calculamos sus parciales
+    $$\frac{\partial Q}{\partial t}=0 \neq t^2=\frac{\partial P}{\partial x}$$
+    y por lo tanto no es una ecuación exacta. Procedemos al cálculo del factor integrante dado por $m(t)$. Sabemos por el ejercicio anterior que
+    este factor ha de cumplir
+    $$P\frac{\partial m(t)}{\partial x}-Q\frac{\partial m(t)}{\partial t}=m(t) \left(\frac{\partial Q}{\partial t}-\frac{\partial P}{\partial x}\right)$$
+    $$P\cdot 0-1 \cdot m'(t)=m(t) \left(0-t^2\right)$$
+    $$m'(t)=t^2m(t)$$
+    Obtenemos una ecuación diferencial de primer orden cuya solución viene dada por $m(t)=e^{\frac{t^3}{3}}$, con lo que obtenemos el factor integrante
+    buscado. Comprobemos que se cumple la condición de exactitud en $m(t)\left(2t+t^2x+x'\right)=0$
+    $$\frac{\partial (m(t)Q)}{\partial t}=t^2e^{\frac{t^3}{3}}=\frac{\partial m(t)P}{\partial x}$$
+    luego tenemos el factor integrante que buscábamos.\QED \\ \\
+
+    {\bf{Ejercicio 8.}} \\
+
+    Se trata de un ejercicio muy similar al anterior, en el que ahora el factor integrante sólo depende de $x$. Para comprobar su existencia basta ver si
+    la ecuación siguiente 
+    $$P\frac{\partial m(x)}{\partial y}-Q\frac{\partial m(x)}{\partial x}=m(x) \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)$$
+    admite una solución para $m(x)$, donde $P(x,y)=y^2$ y $Q(x,y)=e^x$ y para los cuales no se cumple la condición de exactitud. Sustituimos en la 
+    igualdad anterior y obtenemos
+    $$y^2 \cdot 0-e^xm'(x)=m(x)\left(e^x-2y\right)$$
+    $$m'(x)=m(x)\left(\frac{2y}{e^x}-1\right)$$
+    Podemos ver que la solución va a tener dependencia en la variable $y$, por lo tanto podemos afirmar que no existe 
+    factor integrante en estas condiciones.\QED \\ \\
+    
+    \newpage
+
+    {\bf{Ejercicio 9.}} \\
+
+    Veamos si admite potencial. Para ello, vemos que el dominio en que está definida nuestra función $F$ es un dominio estrellado. Si además
+    comprobamos la condición de exactitud podremos afirmar la existencia de dicho potencial. 
+    $$\frac{\partial P}{\partial y} = \frac{-2x}{y^2} = \frac{\partial Q}{\partial x}$$
+    Luego se cumple la condición de exactitud, y por tanto afirmamos la existencia de potencial $U$.
+
+    Procedamos a continuación al cálculo del trabajo a lo largo de la curva $\gamma (\theta)=(\cos\theta, 1+\sin\theta)$, con $\theta \in [0,\pi]$.
+    Para ello, consideremos la siguiente integral
+    $$T=\int_0^{\pi} \langle F\left(\gamma(\theta)\right), \gamma'(\theta)\rangle d\theta = 
+    \int_0^{\pi} \langle \left(\frac{2\cos\theta}{1+\sin\theta}, \frac{-\cos^2\theta}{(1+\sin\theta})^2\right), (-\sin\theta, \cos\theta) \rangle d\theta = $$
+    $$\int_0^{\pi} \frac{-2\cos\theta \sin\theta}{1+\sin\theta}d\theta - \int_0^{\pi} \frac{\cos^3\theta}{(1+\sin\theta)^2}d\theta = 0-0 = 0$$
+
+    Mediante procesos elementales de integración llegamos a la conclusión de que ambas integrales tienen valor 0, y por tanto el trabajo es nulo
+    en el recorrido a lo largo de la curva antes mencionada. \QED \\ \\
+
+    {\bf{Ejercicio 10.}} \\
+
+    Como el campo de fuerzas $F$ está definido en un dominio estrellado $\R^2$, si cumple la condición de exactitud, podemos afirmar la existencia
+    de potencial $U:\R^2 \rightarrow \R$ tal que $F=\nabla U$. Forzamos a continuación que se cumpla la condición de exactitud, es decir
+    $$\frac{\partial F_1}{\partial y} = 1 = \frac{\partial F_2}{\partial x}$$
+    
+    Integrando $F_1$ con respecto a $y$ (como haríamos en otro caso con P) obtenemos que $F_1(x,y)=y+ f(x)$. Nosotros tenemo ya que
+    $F_2(x,y)=x+y$ Calculemos a continuación el potencial asociado
+    $$\int F_2(x,y) dy = xy + \frac{y^2}{2} + g(x)$$
+    
+    Como $\frac{\partial U}{\partial y} = F_1$ obtenemos que $g(x)=\int f(x)dx + C$. La expresión de nuestro potencial queda
+    $$U(x,y)= xy + \frac{y^2}{2} \int f(x)dx$$
+    Para una cierta función $f(x)$
+
+    Calculamos ahora el trabajo a lo largo de la curva $\alpha (s) = (\cos s, 2+ \sin s)$, con $s \in \left[\frac{-\pi}{2},\frac{\pi}{2}\right]$
+    $$T=\int _a^b \langle F(\alpha(s)), \alpha'(s) \rangle ds = U(\alpha(b))-U(\alpha(a)) =
+    $$$$U((0,3))-U((0,1)) = \frac{3^2}{2} + \int f(0)dx - \left(\frac{1^2}{2} + \int f(0)dx\right)=4$$
+    Con lo que tenemos el trabajo realizado al recorrer la trayectoria de la curva antes mencionada. \QED
+
+
+\end{document}
