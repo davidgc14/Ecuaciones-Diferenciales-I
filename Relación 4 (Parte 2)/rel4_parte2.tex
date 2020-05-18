@@ -44,9 +44,68 @@
 
     \begin{center}
         {\large\bf{Relación 4 Ecuaciones diferenciales}} \\
-        \bf{Parte 1}\\
+        \bf{Parte 2}\\
         
     \end{center}
 
     \textbf{Ejercicio 1. } \\
+
+    Nos piden encontrar la solución al sistema dado por 
+    \begin{equation*}
+        \left.
+        \begin{aligned}
+            x' + ty &= -1\\
+            y' + x' &= -1\\
+        \end{aligned}
+        \right\}\quad \Rightarrow \quad
+        \left.
+        \begin{aligned}
+            x' &= -ty -1\\
+            y' &= ty + 1 - 1\\
+        \end{aligned}
+        \right\}\quad \Rightarrow \quad
+        \left.
+        \begin{aligned}
+            x' &= -ty -1\\
+            y' &= ty\\
+        \end{aligned}
+        \right\} 
+    \end{equation*}
+    Dicho sistema podemos expresar de forma $X'(t)=A(t)X(t) + B(t)$, donde vemos que cada uno de los elementos viene dado por
+
+    \begin{equation*}
+        X'(t) = 
+        \begin{pmatrix}
+            x' \\
+            y' \\
+        \end{pmatrix}\\
+        A(t) = 
+        \begin{pmatrix}
+            0 & -t  \\
+            0 & t  \\
+        \end{pmatrix}\\
+        X(t) = 
+        \begin{pmatrix}
+            x \\
+            y \\
+        \end{pmatrix}\\
+        B(t) = 
+        \begin{pmatrix}
+            -1 \\
+            0 \\
+        \end{pmatrix}\\
+    \end{equation*}
+    Nos encontramos ante un sistema de ecuaciones diferenciales lineales de primer orden. Podemos ver que la segunda ecuación sólo tiene coeficientes
+    en $y$,  ya que viene dada por $y' = ty$, la cual sabemos que tiene por solución
+    $$y(t) = K\cdot e^{\frac{t^2}{2}}, \quad K\in \R$$
+    Sustituyendo en la primera ecuación, la cual viene dada por $x' = -ty -1$, que sustituyendo la solución obtenida de la ecuación anterior obtenemos
+    $$x'(t) = -tKe^{\frac{t^2}{2}} - 1$$
+    Que integrando en ambos lados resulta
+    $$x(t) = - Ke^{\frac{t^2}{2}} - t + C, \quad C\in \R$$
+    y obtenemos así la solución general del sistema planteado, en función de un parametro $K\in\R$, el cual variará em función de la condición inicial.
+    $$X(t) = \begin{pmatrix}
+        Ke^{\frac{t^2}{2}} - t + C\\
+        Ke^{\frac{t^2}{2}} \\
+    \end{pmatrix}, \quad K\in \R$$
+
 \end{document}
