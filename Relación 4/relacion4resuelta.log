@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.28)  11 MAY 2020 18:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.28)  18 MAY 2020 18:50
 entering extended mode
-**"c:/Users/david/Desktop/Projects/LaTex/Ecuaciones/Relación 4/relacion4resuelta.tex"
-("c:/Users/david/Desktop/Projects/LaTex/Ecuaciones/Relación 4/relacion4resuelta.tex"
+**"c:/Users/david/Desktop/Ecuaciones-Diferenciales-I/Relación 4/relacion4resuelta.tex"
+("c:/Users/david/Desktop/Ecuaciones-Diferenciales-I/Relación 4/relacion4resuelta.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> ("C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -421,7 +421,7 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count295
 \l__pdf_internal_box=\box61
-) ("c:/Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4\relacion4resuelta.aux")
+) ("c:/Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.aux")
 \openout1 = `relacion4resuelta.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -565,113 +565,113 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--128
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--128
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-[3]
 Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Overfull \hbox (23.78694pt too wide) detected at line 205
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Overfull \hbox (23.78694pt too wide) detected at line 207
 \OML/cmm/m/it/10 m \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 e[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 K[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[]  \OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 K[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 e[]m  \OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 K\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10  []\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 C
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 243--245
+Underfull \hbox (badness 10000) in paragraph at lines 245--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--245
+Underfull \hbox (badness 10000) in paragraph at lines 245--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--266
+Underfull \hbox (badness 10000) in paragraph at lines 265--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--266
+Underfull \hbox (badness 10000) in paragraph at lines 265--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
 
 AED: lastpage setting LastPage
-[5] ("c:/Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4\relacion4resuelta.aux") ) 
+[5] ("c:/Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.aux") ) 
 Here is how much of TeX's memory you used:
  25680 strings out of 480932
- 642956 string characters out of 2899905
+ 642966 string characters out of 2899905
  1035287 words of memory out of 3000000
  41088 multiletter control sequences out of 15000+200000
  537043 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,10n,98p,798b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,10n,98p,799b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\david\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/doublestroke/dsrom10.pfb>
-Output written on "c:/Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4\relacion4resuelta.pdf" (5 pages, 158007 bytes).
+Output written on "c:/Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.pdf" (5 pages, 158007 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

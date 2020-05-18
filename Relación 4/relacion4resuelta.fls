@@ -1,7 +1,7 @@
-PWD c:\Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4
+PWD c:\Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4
 INPUT C:\Users\david\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4\relacion4resuelta.tex
-OUTPUT c:\Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4\relacion4resuelta.log
+INPUT c:\Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.tex
+OUTPUT c:\Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.log
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fleqn.clo
@@ -213,9 +213,9 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\tex\latex\doublestroke\ds
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\tex\latex\doublestroke\dsfont.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT c:\Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4\relacion4resuelta.aux
-INPUT c:\Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4\relacion4resuelta.aux
-OUTPUT c:\Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4\relacion4resuelta.aux
+INPUT c:\Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.aux
+INPUT c:\Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.aux
+OUTPUT c:\Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.aux
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
@@ -247,10 +247,10 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\tex\latex\doublestroke\ud
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\doublestroke\dsrom10.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\doublestroke\dsrom8.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\doublestroke\dsrom8.tfm
-OUTPUT c:\Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4\relacion4resuelta.pdf
+OUTPUT c:\Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.pdf
 INPUT C:\Users\david\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1000.tfm
-INPUT c:\Users\david\Desktop\Projects\LaTex\Ecuaciones\Relación 4\relacion4resuelta.aux
+INPUT c:\Users\david\Desktop\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.aux
 INPUT C:\Users\david\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\david\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
