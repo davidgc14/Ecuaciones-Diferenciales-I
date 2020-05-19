@@ -107,5 +107,27 @@
         Ke^{\frac{t^2}{2}} - t + C\\
         Ke^{\frac{t^2}{2}} \\
     \end{pmatrix}, \quad K\in \R$$
-
+    
+    Y ahora, para el cálculo de una matriz solución particular, bastará con sustituir los parámetros que tenemos para obtener dos soluciones distintas del problema
+    inicial. Tomemos por ello
+    \begin{equation*}
+        x_1(t) = 
+        \begin{pmatrix}
+            -t \\
+            0 \\
+        \end{pmatrix}\\
+        x_2(t) = 
+        \begin{pmatrix}
+            e^{\frac{t^2}{2}} - t \\
+            e^{\frac{t^2}{2}} \\
+        \end{pmatrix}
+    \end{equation*}
+    Donde hemos tomado para la primera solución $K=C=0$, y para la segunda $K=1, \thinspace C=0 $, y por ello podemos construir su matriz solución dada por:
+    $$
+        \Phi (t) = 
+        \begin{pmatrix}
+            -t & e^{\frac{t^2}{2}} - t \\
+            0 & e^{\frac{t^2}{2}} \\           
+        \end{pmatrix}
+    $$
 \end{document}
