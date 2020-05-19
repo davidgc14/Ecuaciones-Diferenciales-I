@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420) (preloaded format=pdflatex 2020.5.15)  19 MAY 2020 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420) (preloaded format=pdflatex 2020.5.15)  19 MAY 2020 17:28
 entering extended mode
 **"c:/Users/Arquímedes/Desktop/LaTex/Ecuaciones-Diferenciales-I/Relación 4/relacion4resuelta.tex"
 ("c:/Users/Arquímedes/Desktop/LaTex/Ecuaciones-Diferenciales-I/Relación 4/relacion4resuelta.tex"
@@ -424,23 +424,23 @@ File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
 ) ("c:/Users\Arquímedes\Desktop\LaTex\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.aux")
 \openout1 = `relacion4resuelta.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 39.
+(lastpage)             ! on input line 41.
  ("C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count296
@@ -458,14 +458,14 @@ Package lastpage Info: Please have a look at the pageslts package at
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
-LaTeX Info: Redefining \microtypecontext on input line 39.
+LaTeX Info: Redefining \microtypecontext on input line 41.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 39.
+LaTeX Info: Redefining \showhyphens on input line 41.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -474,36 +474,31 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 ) ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into your preamble.
- on input line 39.
+ on input line 41.
 
 \c@lstlisting=\count302
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 ("C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) ("C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
  ("C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) ("C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 66.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 68.
  ("C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex/latex/doublestroke\udsrom.fd"
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
@@ -513,174 +508,174 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 [1
 
 {C:/Users/Arquímedes/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 89--93
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--93
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Overfull \hbox (44.66081pt too wide) detected at line 100
+Overfull \hbox (44.66081pt too wide) detected at line 102
 \OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 + 4\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 + 2) + \OML/cmm/m/it/10 e[]a[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 + 2\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 e[]a[]t[] \OT1/cmr/m/n/10 = 0 \OMS/cmsy/m/n/10 ) \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 + 4\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 + 2) + \OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 + 2\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 a[]t[] \OT1/cmr/m/n/10 = 0 \OMS/cmsy/m/n/10 ) \OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-
- []
-
-[3]
 Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
-Overfull \hbox (23.78694pt too wide) detected at line 207
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Overfull \hbox (23.78694pt too wide) detected at line 209
 \OML/cmm/m/it/10 m \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 e[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 K[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[]  \OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 K[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 e[]m  \OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 K\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10  []\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 C
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 245--247
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--247
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--268
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--268
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 298--300
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--300
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
@@ -690,18 +685,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 327--328
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
+
+ []
+
+
+Overfull \hbox (23.08199pt too wide) detected at line 333
+\OML/cmm/m/it/10 x[]m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10   \OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10   \OT1/cmr/m/n/10 7\OML/cmm/m/it/10 xmx[] \OT1/cmr/m/n/10 + 16\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 = 0  \OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10   \OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10   \OT1/cmr/m/n/10 7\OML/cmm/m/it/10 mx[] \OT1/cmr/m/n/10 + 16\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 = 0  \OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 m[] \OMS/cmsy/m/n/10   \OT1/cmr/m/n/10 8\OML/cmm/m/it/10 m \OT1/cmr/m/n/10 + 16 = 0
+ []
+
+
+Overfull \hbox (15.77185pt too wide) detected at line 339
+\OML/cmm/m/it/10 W\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y[]; y[]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 W\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y[]; y[]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 W\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y[]; y[]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 W\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y[]; y[]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) [][] = \OML/cmm/m/it/10 K
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+
 AED: lastpage setting LastPage
 [7] ("c:/Users\Arquímedes\Desktop\LaTex\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.aux") ) 
 Here is how much of TeX's memory you used:
- 25703 strings out of 480811
- 645416 string characters out of 2893361
+ 25707 strings out of 480811
+ 645446 string characters out of 2893361
  1034906 words of memory out of 3000000
  41229 multiletter control sequences out of 15000+200000
- 537145 words of font info for 65 fonts, out of 3000000 for 9000
+ 537247 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,10n,98p,811b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Arquímedes\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/doublestroke/dsrom10.pfb>
-Output written on "c:/Users\Arquímedes\Desktop\LaTex\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.pdf" (7 pages, 169181 bytes).
+Output written on "c:/Users\Arquímedes\Desktop\LaTex\Ecuaciones-Diferenciales-I\Relación 4\relacion4resuelta.pdf" (7 pages, 173369 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
