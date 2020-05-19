@@ -353,6 +353,23 @@
     Por tanto, la solución general al problema de la ecuación enunciada viene dada por 
     $$y(x)=c_1x^4 + c_2x^4\ln|x|$$\\ \\
 
-    
+    \textbf{Ejercicio 14.}\\
+
+    Como queremos que $x_p$ sea solución, estudiamos sus derivadas sucesivas y sustituimos en la ecuación para estudiar la función $Q(t)$ resultante
+    \begin{equation*}
+        x_p=e^{at}Q\\
+        x'_p=e^{at}(aQ+Q')\\
+        x''_p=e^{at}(a^2Q+2aQ'+Q'')\\       
+    \end{equation*} 
+    $$\Rightarrow x_p''-x_p=e^{at}((a^2-1)Q+2aQ'+Q'')=e^{at}P(t)$$
+    Como sabemos que $e^{at}$ es no nulo, podemos dividir, y por tanto simplificar
+    $$(a^2-1)Q+2aQ'+Q''=P(t)$$
+    Donde tomaremos por $m$ el grado de $(a^2-1)Q+2aQ'+Q''$, y por $n$ al grado del polinomio $P(t)$. Por tanto tenemos que distinguir dos casos en función
+    del valor de $a$:
+    \begin{itemize}
+        \item[$a\neq \pm 1$] En este caso $(a^2-1)\neq 0$ entonces $n=m$.
+        \item[$a = \pm 1$] En este caso $(a^2-1) = 0 \Rightarrow 2aQ' + Q'' = P(t)$, luego $gr(Q')=m-1=n=gr(P(t))$, con lo que obtenemos que 
+                $gr(Q)=m=n+1$ .
+    \end{itemize}
 
 \end{document}
