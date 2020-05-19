@@ -229,75 +229,102 @@
     \end{matrix}
     \right| = x_1'(t)\lambda x_1(t) - x_1'(t)\lambda x_1(t)=0, \quad \forall t \in I
     $$
-Con lo que obtenemos que el Wronskiano es nulo cuando  $x_1$ y $x_2$ son linealmente dependientes.
+    Con lo que obtenemos que el Wronskiano es nulo cuando  $x_1$ y $x_2$ son linealmente dependientes.
 
-\framebox{$\Leftarrow$} Razonamos de manera similar al apartado anterior. Partimos de que el Wronskiano es nulo:
-$$W(x_1,x_2)(t) = \left|
-\begin{matrix}
-    x_1(t) & x_2(t) \\
-    x_1'(t) & x_2'(t) \\
-\end{matrix}
-\right|=0 \quad \Rightarrow \quad x_1(t) x_2'(t) - x_1'(t)\lambda x_2(t)=0, \quad \forall t \in I$$
-Con lo que obtenemos un tipo de ecuación diferencial que sabemos resolver. Suponiendo $x_1,x_2 \neq 0$ obtenemos lo que sigue
-(es lógico suponer esto ya que si alguna de las dos fuera nula, ambas serían linealmente dependientes 
-y por tanto habríamos acabado el ejercicio)
-$$\frac{x_1'(t)}{x_1(t)}=\frac{x_2'(t)}{x_2(t)} \quad \Rightarrow \quad  \int \frac{x_1'(t)}{x_1(t)} dt=\int \frac{x_2'(t)}{x_2(t)} dt
-\quad \Rightarrow \quad \ln x_1(t) = \ln x_2(t) +C, \quad C\in\R$$
-Por lo tanto, mediante cálculos elementales llegamos a la igualdad $x_1(t)=k\cdot x_2(t)$ y por lo tanto deducimos que  $x_1$ y $x_2$ son linealmente dependientes.\\ \\
+    \framebox{$\Leftarrow$} Razonamos de manera similar al apartado anterior. Partimos de que el Wronskiano es nulo:
+    $$W(x_1,x_2)(t) = \left|
+    \begin{matrix}
+        x_1(t) & x_2(t) \\
+        x_1'(t) & x_2'(t) \\
+    \end{matrix}
+    \right|=0 \quad \Rightarrow \quad x_1(t) x_2'(t) - x_1'(t)\lambda x_2(t)=0, \quad \forall t \in I$$
+    Con lo que obtenemos un tipo de ecuación diferencial que sabemos resolver. Suponiendo $x_1,x_2 \neq 0$ obtenemos lo que sigue
+    (es lógico suponer esto ya que si alguna de las dos fuera nula, ambas serían linealmente dependientes 
+    y por tanto habríamos acabado el ejercicio)
+    $$\frac{x_1'(t)}{x_1(t)}=\frac{x_2'(t)}{x_2(t)} \quad \Rightarrow \quad  \int \frac{x_1'(t)}{x_1(t)} dt=\int \frac{x_2'(t)}{x_2(t)} dt
+    \quad \Rightarrow \quad \ln x_1(t) = \ln x_2(t) +C, \quad C\in\R$$
+    Por lo tanto, mediante cálculos elementales llegamos a la igualdad $x_1(t)=k\cdot x_2(t)$ y por lo tanto deducimos que  $x_1$ y $x_2$ son linealmente dependientes.\\ \\
 
-\textbf{Ejercicio 10.} \\
+    \textbf{Ejercicio 10.} \\
 
-Existen muchas maneras de resolver este ejercicio, pero nosotros desarrollaremos la idea mas intuitiva y más lógica. Como queremos ver si $f_1(t) = e^t$ y $f_2(t)=\sin (t)$
-pueden ser soluciones de la ecuación de segundo orden, supongamos por hipótesis que lo son. Si es así, sólo hace falta sustituir en nuestra ecuación 
-las derivadas sucesivas de nuestras dos candidatas a solución (queremos que sean solución de la misma ecuación lineal de segundo orden).
-\begin{equation*}
-    \left.
-    \begin{aligned}
-        e^t + e^ta_1 + e^t a_0 = 0 \\
-        -\sin + \cos(t)a_1 + \sin(t)a_0=0
-    \end{aligned}
-    \right\} \quad \Rightarrow \quad a_0(t)=\frac{\sin(t) + \cos(t)}{\sin(t) - \cos(t)}, \quad a_1(t)=\frac{2\sin(t)}{\sin(t) - \cos(t)} \thinspace \forall t \in I
-\end{equation*}
-Estos valores de $a_0$ y $a_1$ son sólo válidos cuando se cumpla la condición $\sin(t) \neq \cos(t)$, es decir, para todo $t \neq \frac{\pi}{4} + \pi K, \thinspace K \in \Z$.
-Es decir, la ecuación lineal completa de segundo orden dada por 
-$$x'' + x'\frac{2\sin(t)}{\sin(t) - \cos(t)} + x\frac{\sin(t) + \cos(t)}{\sin(t) - \cos(t)}$$
-tendrá como solución $f_1(t) = e^t$ y $f_2(t)=\sin (t)$ simultáneamente cuando esté definida en intervalos abiertos y conexos de la forma 
-$$I = \left(\frac{\pi}{4} + \pi K, \frac{\pi}{4} + \pi (K+1)\right), \quad K \in \Z$$
-Por lo tanto podemos afirmar que las funciones $f_1(t) = e^t$ y $f_2(t)=\sin (t)$ pueden ser solución de la ecuación lineal completa siempre que dicha ecuación
-esté definida en un intervalo como el que acabamos de ver.\\ \\
+    Existen muchas maneras de resolver este ejercicio, pero nosotros desarrollaremos la idea mas intuitiva y más lógica. Como queremos ver si $f_1(t) = e^t$ y $f_2(t)=\sin (t)$
+    pueden ser soluciones de la ecuación de segundo orden, supongamos por hipótesis que lo son. Si es así, sólo hace falta sustituir en nuestra ecuación 
+    las derivadas sucesivas de nuestras dos candidatas a solución (queremos que sean solución de la misma ecuación lineal de segundo orden).
+    \begin{equation*}
+        \left.
+        \begin{aligned}
+            e^t + e^ta_1 + e^t a_0 = 0 \\
+            -\sin + \cos(t)a_1 + \sin(t)a_0=0
+        \end{aligned}
+        \right\} \quad \Rightarrow \quad a_0(t)=\frac{\sin(t) + \cos(t)}{\sin(t) - \cos(t)}, \quad a_1(t)=\frac{2\sin(t)}{\sin(t) - \cos(t)} \thinspace \forall t \in I
+    \end{equation*}
+    Estos valores de $a_0$ y $a_1$ son sólo válidos cuando se cumpla la condición $\sin(t) \neq \cos(t)$, es decir, para todo $t \neq \frac{\pi}{4} + \pi K, \thinspace K \in \Z$.
+    Es decir, la ecuación lineal completa de segundo orden dada por 
+    $$x'' + x'\frac{2\sin(t)}{\sin(t) - \cos(t)} + x\frac{\sin(t) + \cos(t)}{\sin(t) - \cos(t)}$$
+    tendrá como solución $f_1(t) = e^t$ y $f_2(t)=\sin (t)$ simultáneamente cuando esté definida en intervalos abiertos y conexos de la forma 
+    $$I = \left(\frac{\pi}{4} + \pi K, \frac{\pi}{4} + \pi (K+1)\right), \quad K \in \Z$$
+    Por lo tanto podemos afirmar que las funciones $f_1(t) = e^t$ y $f_2(t)=\sin (t)$ pueden ser solución de la ecuación lineal completa siempre que dicha ecuación
+    esté definida en un intervalo como el que acabamos de ver.\\ \\
 
-\textbf{Ejercicio 11.} \\
+    \textbf{Ejercicio 11.} \\
 
-Para determinar un sistema fundamental de la ecuación, percatémonos de que se trata de una ecuación diferencial de tercer orden con coeficientes constantes,
-y que por tanto sabemos que las soluciones vienen dadas por el conjunto
-$$\{t^le^{m_it}: \quad l=0,...,q_i-1, \quad i=1,...r\}$$
-siendo $m_1,...,m_r$ r raíces distintas de la ecuación característica asociada a la ecuación lineal homogénea (que es nuestro caso) de orden $k$, siendo 
-$q_i$ la multiplicidad de $m_i$. Por ello, obtenemos la ecuación característica asociada, la cual viene dada por 
-$$m^3 + 3m^2 -4m = 0$$
-La cual tiene raíces $m_1 = 1$ y $m_2 = -2$ con multiplicidades $q_1 = 1$ y $q_2 = 2$, respectivamente. Por tanto, por lo mencionado anteriormente, tenemos
-que las soluciones vienen dadas por la base 
-$$\{e^t, \thinspace e^{-2t}, \thinspace te^{-2t}\}$$
-Las cuales sabemos que son linealmente independientes, y por tanto forman un sistema fundamental de la ecuación.
+    Para determinar un sistema fundamental de la ecuación, percatémonos de que se trata de una ecuación diferencial de tercer orden con coeficientes constantes,
+    y que por tanto sabemos que las soluciones vienen dadas por el conjunto
+    $$\{t^le^{m_it}: \quad l=0,...,q_i-1, \quad i=1,...r\}$$
+    siendo $m_1,...,m_r$ r raíces distintas de la ecuación característica asociada a la ecuación lineal homogénea (que es nuestro caso) de orden $k$, siendo 
+    $q_i$ la multiplicidad de $m_i$. Por ello, obtenemos la ecuación característica asociada, la cual viene dada por 
+    $$m^3 + 3m^2 -4m = 0$$
+    La cual tiene raíces $m_1 = 1$ y $m_2 = -2$ con multiplicidades $q_1 = 1$ y $q_2 = 2$, respectivamente. Por tanto, por lo mencionado anteriormente, tenemos
+    que las soluciones vienen dadas por la base 
+    $$\{e^t, \thinspace e^{-2t}, \thinspace te^{-2t}\}$$
+    Las cuales sabemos que son linealmente independientes, y por tanto forman un sistema fundamental de la ecuación.
 
-Supongamos ahora que tenemos las condiciones iniciales $x(0) = x'(0) = x''(0)$. Nosotros ya sabemos que las soluciones de la ecuación vienen dadas por 
-$$x(t)= ae^t + be^{-2t} + cte^{-2t}, \quad a,b,c \in \R$$
-Calculemos por ello sus derivadas sucesivas e impongamos que se cumplan las condiciones mencionadas.
-$$x'(t)= ae^t -2be^{-2t} + ce^{-2t}(1-2t)$$
-$$x''(t)= ae^t + 4be^{-2t} + 4ce^{-2t}(t-1)$$
-Forzando $x(0) = x'(0) = x''(0)$ obtenemos
+    Supongamos ahora que tenemos las condiciones iniciales $x(0) = x'(0) = x''(0)$. Nosotros ya sabemos que las soluciones de la ecuación vienen dadas por 
+    $$x(t)= ae^t + be^{-2t} + cte^{-2t}, \quad a,b,c \in \R$$
+    Calculemos por ello sus derivadas sucesivas e impongamos que se cumplan las condiciones mencionadas.
+    $$x'(t)= ae^t -2be^{-2t} + ce^{-2t}(1-2t)$$
+    $$x''(t)= ae^t + 4be^{-2t} + 4ce^{-2t}(t-1)$$
+    Forzando $x(0) = x'(0) = x''(0)$ obtenemos
 
-\begin{equation*}
-    \left.
-    \begin{aligned}
-        x(0) = x'(0)\quad \Rightarrow \quad a+b=a-2b+c\quad \Rightarrow \quad 3b = c
-        x(0) = x''(0)\quad \Rightarrow \quad a+b=a+4b-4c\quad \Rightarrow \quad 3b = 4c
-    \end{aligned}
-    \right\} \Rightarrow b=c=0
-\end{equation*}
-Y por lo tanto podemos concluir que la solución general para la ecuación con las condiciones iniciales antes mencionadas es 
-$$x(t) = ae^t, \quad a\in R$$
-Y vemos fácilmente que la dimensión del espacio de soluciones para este problema de valores iniciales es 1.\\ \\
+    \begin{equation*}
+        \left.
+        \begin{aligned}
+            x(0) = x'(0)\quad \Rightarrow \quad a+b=a-2b+c\quad \Rightarrow \quad 3b = c\\
+            x(0) = x''(0)\quad \Rightarrow \quad a+b=a+4b-4c\quad \Rightarrow \quad 3b = 4c\\
+        \end{aligned}
+        \right\} \Rightarrow b=c=0
+    \end{equation*}
+    Y por lo tanto podemos concluir que la solución general para la ecuación con las condiciones iniciales antes mencionadas es 
+    $$x(t) = ae^t, \quad a\in R$$
+    Y vemos fácilmente que la dimensión del espacio de soluciones para este problema de valores iniciales es 1.\\ \\
 
-\textbf{Ejercicio 12.} \\
+    \textbf{Ejercicio 12.} \\
 
+    Para el primer apartado, comprobemos que efectivamente $z_0(t) = e^t$ es una solución particular. Para ello, tomando las derivadas sucesivas, sustituyamos en la ecuación homogénea
+    dada, y obtenemos
+    $$(1+t)e^t - (1+2t)e^t + te^t = 0 \quad \Rightarrow \quad 1+t - 1+2t + t = 0$$
+    Por lo que, al verificarse la igualdad, hemos comprobado que $z_0(t) = e^t$ es efectivamente una solución particular.
+
+    Para el segundo apartado tomaremos el cambio $x=u(t)e^t$ y estudiaremos sus derivadas sucesivas antes de sustituir en la ecuación completa dada
+    \begin{equation*}
+        x=ue^t\\
+        x'=e^t(u' + u) \\
+        x''=e^t(u'' + u' + u)\\
+    \end{equation*}
+    Procedemos entonces a sustituir en la ecuación completa para realizar el cambio de variable:
+    $$(1+t)x'' - (1+2t)x' + tx = te^t \quad \Rightarrow \quad (1+t)e^t(u'' + u' + u) - (1+2t)e^t(u' + u) + tue^t = te^t$$
+    $$(1+t)(u'' + u' + u) - (1+2t)(u' + u) + ut = t \quad \Rightarrow \quad u''(1+t)+u' = t$$
+    Reduzcamos el orden mediante el cambio $v=u'$ para obtener una ecuación lineal de primer orden $\Rightarrow v'(1+t)+v = t$. Observemos a continuación que $[v(1+t)]' = v'(1+t)+v$, por
+    tanto, al integrar en ambos lados la igualdad $v'(1+t)+v = t$ obtenemos
+    $$\int v'(1+t)+v dt= \int t dt \quad \Rightarrow \quad v(1+t) = \frac{t^2}{2} + C, \quad C\in \R$$
+    $$\Rightarrow v=\frac{t^2/2 + C}{t+1}$$
+    Deshacemos el cambio de variable $u'=v$ y obtenemos 
+    $$u = \int v dt = \frac{1}{2}\int \frac{t^2}{t+1}dt + C_1\int \frac{1}{t+1}dt = \left(\frac{(t+1)^2}{4} + \frac{\ln|t+1|}{2} - (t+1)\right) + C_1(\ln|t+1|) + C_2$$
+
+    Y deshaciendo el cambio $x=u(t)e^t$ obtenemos el resultado
+    $$x(t) =e^t\left(\frac{(t+1)^2}{4} + \frac{\ln|t+1|}{2} - (t+1)\right) + C_1e^t(\ln|t+1|) + C_2e^t$$\\ \\
+
+    \textbf{Ejercicio 13.} \\
+
+    
 \end{document}
