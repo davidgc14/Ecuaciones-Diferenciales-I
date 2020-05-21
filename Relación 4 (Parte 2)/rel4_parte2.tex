@@ -13,6 +13,7 @@
 \usepackage{listings}
 \usepackage{tikz}
 \usepackage{dsfont} %Numeros reales, naturales...
+\usepackage{cancel}
 
 %\graphicspath{{images/}}
 \newcommand*{\QED}{\hfill\ensuremath{\square}}
@@ -35,6 +36,7 @@
 
 \def\sup{$^2$}
 
+\def\next{\quad \Rightarrow \quad}
 
 \begin{document}
 
@@ -126,8 +128,50 @@
     $$
         \Phi (t) = 
         \begin{pmatrix}
-            -t & e^{\frac{t^2}{2}} - t \\
+            -t & -e^{\frac{t^2}{2}} - t \\
             0 & e^{\frac{t^2}{2}} \\           
         \end{pmatrix}
-    $$
+    $$\\ \\
+
+    \newpage 
+
+    \textbf{Ejercicio 2. } \\
+
+    Como tenemos la matriz $\Phi$, supongamos que es matriz solución de un sistema dado $X'(t) = A(t) X(t)$. Por ser matriz solución (y ser clase $\mathcal{C}^1$ y por tanto
+    ser derivable), sabemos que tiene que cumplirse $\Phi' = A\Phi$. Como el determinante de la matriz $\Phi$ es no nulo $\forall t \in I\subset \R$, podemos afirmar que dicha matriz 
+    tiene inversa, y que por lo tanto la matriz $A$ puede representarse de la siguiente manera
+    $$A=\Phi' \Phi^{-1}$$
+    Por ello vemos que hemos determinado la matriz $A$ en función de $\Phi$, para la cual, el problema $X'(t) = A(t) X(t)$ tiene por matriz solución la matriz $\Phi$, y que  por lo tanto (por tener
+    determinante no nulo) podemos afirmar que se trata de una matriz fundamental.\\ \\
+
+    \textbf{Ejercicio 3. } \\
+
+    Supondremos durante la demostración que ambas matrices son clase $\mathcal{C}^1$. Si queremos probar la existencia de un $C \in \R$ tal que se cumpla $\Phi = \Psi \cdot C$, será lo mismo probar que $C = \Phi \Psi^{-1}$ 
+    (podemos afirmar que tiene inversa ya que tiene determinante no nulo) y por tanto 
+    $$(\Psi^{-1}\Phi)' = 0$$
+    Por tanto veamos si, siendo ambas matrices fundamentales, estudiemos el valor de la derivada. 
+    $$(\Psi^{-1}\Phi)' = \Psi^{-1} \Phi'  + (\Psi^{-1})' \Phi $$
+    Estudiemos a parte el valor de $(\Psi^{-1})'$. Para ello consideremos $\Psi \Psi^{-1} = 1_n$, y por tanto la derivada ha de ser nula, 
+    $$(\Psi^{-1}\Psi)' = \Psi' \Psi^{-1} + \Psi (\Psi^{-1})'= 0 \next (\Psi^{-1})' = - \Psi^{-1}\Psi' \Psi^{-1}$$
+    Podemos considerar inversas puesto que, al tratarse de matrices fundamentales tienen determinante no nulo. Retomemos por tanto la ecuación anterior, 
+    $$(\Psi^{-1}\Phi)' = \Psi^{-1}\Phi' + (\Psi^{-1})' \Phi  = \Psi^{-1} \Phi' - \Psi^{-1}\Psi' \Psi^{-1} \Phi  $$
+    Como ambas matrices son fundamentales, son por ello solución de $X'(t) = A(t) X(t)$ y por tanto la cumplen $\Phi' = A\Phi$ y $\Psi' = A\Psi$. Sustituimos y obtenemos
+    $$(\Psi^{-1}\Phi)' = \Psi^{-1} A(t)\Phi - \Psi^{-1}A(t) \cancel{\Psi \Psi^{-1}} \Phi = \Psi^{-1} A(t)\Phi - \Psi^{-1} A(t)\Phi = 0$$
+    $$(\Psi^{-1}\Phi)' = 0$$
+    Como queríamos probar.\\ \\
+
+    \textbf{Ejercicio 4. } \\
+
+    Repetimos la demostración hecha en el apartado anterior. Como nuestra matriz es clase $\mathcal{C}^1$ con determinante no nulo, podemos afirmar que tiene inversa. También podemos afirmar
+    la obviedad $\Phi \Phi^{-1} = 1_n$, y por tanto si derivamos ambos lados de la igualdad obtenemos
+    $$(\Phi^{-1}\Phi)' = \Phi' \Phi^{-1} + \Phi (\Phi^{-1})'= 0 \next - \Phi' \Phi^{-1} = \Phi (\Phi^{-1})'$$
+    Como hemos dicho que tiene inversa, basta despejar $(\Phi^{-1})'$ y obtenemos el resultado que buscábamos
+    $$(\Phi^{-1})' = - \Phi^{-1} \Phi' \Phi^{-1} $$\\ \\
+
+    \textbf{Ejercicio 5. } \\
+ 
+
+
+
+
 \end{document}

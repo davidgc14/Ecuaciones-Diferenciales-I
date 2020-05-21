@@ -211,6 +211,8 @@ INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.cfg
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex\latex\doublestroke\dsfont.sty
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex\latex\doublestroke\dsfont.sty
+INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cancel\cancel.sty
+INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cancel\cancel.sty
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT c:\Users\Arquímedes\Desktop\LaTex\Ecuaciones-Diferenciales-I\Relación 4 (Parte 2)\rel4_parte2.aux
@@ -260,6 +262,8 @@ INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi5.pfb
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr5.pfb
@@ -272,3 +276,5 @@ INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\doublestroke\dsrom10.pfb
 INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\doublestroke\dsrom10.pfb
+INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\latxfont\line10.pfb
+INPUT C:\Users\Arquímedes\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\latxfont\line10.pfb
