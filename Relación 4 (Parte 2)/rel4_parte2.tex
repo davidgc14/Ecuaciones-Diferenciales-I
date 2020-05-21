@@ -169,9 +169,65 @@
     $$(\Phi^{-1})' = - \Phi^{-1} \Phi' \Phi^{-1} $$\\ \\
 
     \textbf{Ejercicio 5. } \\
- 
+    El enunciado es falso. Consideremos un sistema homogéneo $X'(t) = A X(t)$ (con la matriz $A$ con coeficientes constantes) tal que $\Phi$ sea una matriz fundamental (clase $\mathcal{C}^1$) del sistema homogeneo
+    dado. Por tanto sabemos que $\Phi$ es solución del sistema, por lo que obtenemos 
+    $$\Phi' = A \Phi$$
+    Como hemos supuesto que la matriz $A$ tiene coeficientes constantes, al derivar en ambos lados de la igualdad obtenemos 
+    $$\Phi'' = A \Phi'$$
+    Luego $\Phi'$ también es solución del sistema homogéneo $X'(t) = A X(t)$.
+    
+    
+    
+    Toda matriz fundamental tiene determinante no nulo, por lo que basta tomar una matriz $\Phi$ tal que $det(\Phi) = C, \thinspace C \in \R-\{0\}$,
+    con lo que tenemos una matriz con determinante no nulo para todo $t$ en su dominio de definición\\ \\
+
+    \textbf{Ejercicio 6. } \\
+
+    Para ver si son solución de manera simultánea, podemos considerar la matriz solución 
+    $$\Phi (t) = \begin{pmatrix}
+        1 & \sin(t)\\
+        \sin(t) & 1\\
+    \end{pmatrix}$$
+    Y comprobar si existe una matriz $A(t)$ para que la matriz $\Phi$ sea solución del sistema homogéneo $X'(t) = A(t) X(t)$. Si suponemos que sea matriz solución,
+    entonces tiene que cumplirse
+    $$\Phi' (t) = A(t) \Phi(t)$$
+    $$
+    \begin{pmatrix}
+        0 & \cos(t)\\
+        \cos(t) & 0\\
+    \end{pmatrix} 
+    = A(t)
+    \begin{pmatrix}
+        1 & \sin(t)\\
+        \sin(t) & 1\\
+    \end{pmatrix}
+    $$
+    Si estudiamos el determinante de la matriz $\Phi$ vemos que $det(\Phi)=1-\sin^2(t)=\cos^2(t)$, el cual vemos que es no nulo para todo 
+    $t\neq K\pi + \frac{\pi}{2}, \thinspace K\in\Z$. Por lo tanto, considerando dicho determinante no nulo, podemos afirmar que tiene inversa, y por tanto 
+    podemos despejar la matriz $A(t)$ de la siguiente manera
+    $$A(t) = \Phi' (t) (\Phi(t))^{-1}$$
+    $$A(t) = 
+    \begin{pmatrix}
+        0 & \cos(t)\\
+        \cos(t) & 0\\
+    \end{pmatrix} 
+    \begin{pmatrix}
+        1 & -\sin(t)\\
+        -\sin(t) & 1\\
+    \end{pmatrix}
+    \frac{1}{\cos^2(t)} = 
+    \begin{pmatrix}
+        -\tan(t) & \frac{1}{\cos(t)}\\
+        \frac{1}{\cos(t)} & -\tan(t)\\
+    \end{pmatrix}
+    $$
+
+    Hemos encontrado una matriz $A(t)$ definida en un conjunto $I=\{t\in \R: \thinspace t\neq K\pi + \frac{\pi}{2}, \thinspace K\in\Z\}$, por lo tanto podemos afirmar 
+    que en estas condiciones ambas soluciones $X_1$ y $X_2$ pueden ser solución de manera simultánea.\\ \\
+
+    \textbf{Ejercicio 7. } \\
 
 
-
+    
 
 \end{document}
