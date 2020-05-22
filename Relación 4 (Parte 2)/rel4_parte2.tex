@@ -227,6 +227,153 @@
 
     \textbf{Ejercicio 7. } \\
 
+    Si dicha solución existiera, tendría que cumplir el sistema completo dado $X'(t) = AX(t) + e^{\alpha t}V$. Por ello, estudiemos las derivadas de nuestra candidata a solución
+    $$X_1(t) = e^{\alpha t}W \quad X_1'(t) = \alpha e^{\alpha t}W$$
+    Sustituyendo en el sistema antes mencionado obtenemos
+    $$X_1'(t) = AX_1(t) + e^{\alpha t}V  \next  \alpha e^{\alpha t}W = A \cdot e^{\alpha t}W + e^{\alpha t}V  \next  \alpha W = A\cdot W + V  \next V = (\alpha I_n -A) W$$
+    Para poder despejar el vector $W$ tenemos que ver primero si $(\alpha I_n -A)$ tiene inversa, es decir, si su determinante es nulo o no. Si fuera nulo, por la fórmula del polinomio 
+    característico, podríamos afirmar que $\alpha$ es valor propio de $A$, lo cual no es cierto, por lo que concluimos que $det(\alpha I_n -A)\neq 0$ y por tanto tiene inversa. 
+    $$ W = (\alpha I_n -A)^{-1} V $$
+    Y hemos encontrado un vector para que $X_1$ sea solución, y por lo tanto podemos afirmar que existe un cierto $W$ tal que $X_1(t) = e^{\alpha t}W$ es solución del sistema completo
+    $X'(t) = AX(t) + e^{\alpha t}V$.\\ \\
+
+    \textbf{Ejercicio 8. } \\
+
+    Consideremos la forma matricial del sistema dada por
+    $$
+    X'(t) = AX(t) + B(t) = 
+    \begin{pmatrix}
+        2 & -3 \\
+        1 & -2 \\
+    \end{pmatrix}
+    X(t) + 
+    \begin{pmatrix}
+        3e^{2t} \\
+        -8e^{-3t}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        2 & -3 \\
+        1 & -2 \\
+    \end{pmatrix}
+    X(t) + e^{-3t}
+    \begin{pmatrix}
+        3e^{5t} \\
+        -8
+    \end{pmatrix}
+    $$
+    Podemos ver fácilmente que los valores propios de la matriz $A$ son $\lambda_1=1$ y $\lambda_2=-1$, ambos distintos de $\alpha = -3$, por lo que aplicando el ejercicio anterior sabemos 
+    que una solución particular del sistema viene dada por 
+    $$X_p(t) = e^{\alpha t}W =  e^{-3t}W  = e^{-3t}(\alpha I_n -A)^{-1} V = e^{-3t}(\alpha I_n -A)^{-1} \begin{pmatrix} 3e^{5t} \\ -8 \end{pmatrix}$$
+    Calculemos por ello la matriz $(\alpha I_n -A)^{-1}$ para proceder después al cálculo de la solución particular (sabemos que existe inversa porque $\alpha$ no es valor propio)
+    $$
+    (\alpha I_n -A)^{-1} = 
+    \begin{pmatrix}
+        -5 & 0\\
+        -4 & -1
+    \end{pmatrix}^{-1}=
+    \begin{pmatrix}
+        -1/5 & 0\\
+        4/5 & -1
+    \end{pmatrix}
+    $$
+    $$
+    \Rightarrow X_p(t) = 
+    e^{-3t}(\alpha I_n -A)^{-1} 
+    \begin{pmatrix} 
+    3e^{5t} \\ 
+    -8 
+    \end{pmatrix} = 
+    e^{-3t}
+    \begin{pmatrix}
+        -1/5 & 0\\
+        4/5 & -1   
+    \end{pmatrix}
+    \begin{pmatrix} 
+        3e^{5t} \\ 
+        -8 
+    \end{pmatrix} = 
+    e^{-3t}
+    \begin{pmatrix}
+        -e^{5t}3/5 \\
+        e^{5t}12/5+8
+    \end{pmatrix}
+    $$
+    Con lo que hemos obtenido la solución particular. Calculemos ahora el sistema fundamental. Como ya teníamos los valores propios $\lambda_1=1$ y $\lambda_2=-1$, sólo nos falta conocer
+    sus vectores propios asociados, los cuales vienen dados por $V_1 = \begin{pmatrix} 3\\1 \end{pmatrix}$ y $V_2 = \begin{pmatrix} 1\\1 \end{pmatrix}$, con lo que ya tenemos todos los elementos
+    para construir nuestra solución general
+    $$X(t) = c_1e^{\lambda_1 t}V_1 + c_2e^{\lambda_2 t}V_2 + c_3X_p(t) = c_1e^{t}\begin{pmatrix} 3\\1 \end{pmatrix} + c_2e^{-t} \begin{pmatrix} 1\\1 \end{pmatrix} + 
+    e^{-3t}\begin{pmatrix}-e^{5t}\frac{3}{5} \\e^{5t}\frac{12}{5}+8\end{pmatrix}, \quad c_1,c_2 \in \R$$\\ \\
+
+    \textbf{Ejercicio 9. } \\
+    
+    Para encontrar la solución general, encontremos primero una solución del sistema homogéneo asociado y le añadiremos después una solución particular. Para encontrar
+    un sistema fundamental del sistema homogéneo asociado consideremos los valores propios y sus vectores propios asociados de la matriz $A$ para encontrar soluciones de la forma $e^{\alpha t}V$.
+    Vemos que la matriz $A$ tiene por polinomio característico $p_A(\lambda) = \lambda^2 - 3\lambda + 2$ cuyas raices son $\lambda_1=1$ y $\lambda_2=2$, y sus vectores propios asociados vienen dados por
+    $V_1 = \begin{pmatrix} 1\\1 \end{pmatrix}$ y $V_2 = \begin{pmatrix} 2\\1 \end{pmatrix}$ respectivamente. por ello tenemos las soluciones de la homogénea
+    \begin{equation*}
+        X_1(t)=e^t \begin{pmatrix} 1\\1 \end{pmatrix}\\
+        X_2(t)=e^{2t} \begin{pmatrix} 2\\1 \end{pmatrix}\\
+    \end{equation*}
+    Las cuales vemos que son linealmente independientes ya que su matriz solución asociada tiene determinante no nulo $ \forall t \in \R$, y por tanto es una matriz fundamental. Calculemos ahora una solución particular del sistema completo.
+    Para ello usaremos el método de variación de constantes, mediante el cual sabemos que la solución particular viene dada por 
+    $$X_p(t) = \Phi(t) \int \Phi^{-1}(t)B(t) \thinspace dt$$
+    donde la matriz $\Phi$ es la matriz fundamental, la cual sabemos que tiene inversa ya que su determinante no se anula. 
+    \begin{equation*}
+        \Phi(t) = 
+        \begin{pmatrix}
+            e^t & 2e^{2t}\\
+            e^t & e^{2t}
+        \end{pmatrix}\\
+        \Phi^{-1}(t) = \frac{1}{e^{2t}}
+        \begin{pmatrix}
+            -e^t & 2e^t\\
+            1 & -1
+        \end{pmatrix}
+    \end{equation*}
+
+    $$X_p(t) = \Phi(t) \int 
+    \frac{1}{e^{2t}}
+    \begin{pmatrix}
+        -e^t & 2e^t\\
+        1 & -1
+    \end{pmatrix}
+    \begin{pmatrix}
+        e^t \\ 2
+    \end{pmatrix}
+    \thinspace dt = \Phi(t)
+    \begin{pmatrix}
+        -t - 4e^{-t}\\
+        e^{-2t} - e^{-t}
+    \end{pmatrix}
+    +C = 
+    \begin{pmatrix}
+        -e^t(t+2) -2\\
+        -e^t(t+1) -3
+    \end{pmatrix}
+    +C, \quad C \in \R^2
+    $$
+    Como se trata de una solución particular, podemos considerar $C=\begin{pmatrix} 2 \\ 3\end{pmatrix}$, con lo que obtenemos la solución particular
+    $$X_p(t)=
+    \begin{pmatrix}
+        -e^t(t+2) -2\\
+        -e^t(t+1) -3
+    \end{pmatrix}$$
+    Y por tanto la solución general viene dada por 
+
+    $$X(t)= 
+    \begin{pmatrix}
+        e^t & 2e^{2t}\\
+        e^t & e^{2t}
+    \end{pmatrix}
+    C_1 + 
+    \begin{pmatrix}
+        -e^t(t+2) -2\\
+        -e^t(t+1) -3
+    \end{pmatrix}, \quad C_1\in\R
+    $$\\ \\
+
+    \textbf{Ejercicio 10. } \\
 
     
 

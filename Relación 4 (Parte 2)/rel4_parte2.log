@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420) (preloaded format=pdflatex 2020.5.15)  21 MAY 2020 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420) (preloaded format=pdflatex 2020.5.15)  22 MAY 2020 12:32
 entering extended mode
 **"c:/Users/Arquímedes/Desktop/LaTex/Ecuaciones-Diferenciales-I/Relación 4 (Parte 2)/rel4_parte2.tex"
 ("c:/Users/Arquímedes/Desktop/LaTex/Ecuaciones-Diferenciales-I/Relación 4 (Parte 2)/rel4_parte2.tex"
@@ -587,20 +587,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
  []
 
 
+Overfull \hbox (25.00584pt too wide) detected at line 233
+\OML/cmm/m/it/10 X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 AX[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 e[]V  \OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 e[]W \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 A \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 e[]W \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 e[]V  \OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 W \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 A \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 W \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 V  \OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 V \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 I[] \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 W
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+[4]
+Overfull \hbox (10.47803pt too wide) detected at line 355
+\OML/cmm/m/it/10 X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) [] [] [] []  \OML/cmm/m/it/10 dt \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) [] + \OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = [] + \OML/cmm/m/it/10 C;  C \OMS/cmsy/m/n/10 2 \U/dsrom/m/n/10 R[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
+
+ []
+
+
 AED: lastpage setting LastPage
-[3] ("c:/Users\Arquímedes\Desktop\LaTex\Ecuaciones-Diferenciales-I\Relación 4 (Parte 2)\rel4_parte2.aux") ) 
+[5] ("c:/Users\Arquímedes\Desktop\LaTex\Ecuaciones-Diferenciales-I\Relación 4 (Parte 2)\rel4_parte2.aux") ) 
 Here is how much of TeX's memory you used:
- 25711 strings out of 480811
- 645753 string characters out of 2893361
- 1032894 words of memory out of 3000000
+ 25725 strings out of 480811
+ 645859 string characters out of 2893361
+ 1035894 words of memory out of 3000000
  41250 multiletter control sequences out of 15000+200000
- 536402 words of font info for 56 fonts, out of 3000000 for 9000
+ 536759 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,11n,98p,815b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/doublestroke/dsrom10.pfb><C:/Users/Arquímedes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on "c:/Users\Arquímedes\Desktop\LaTex\Ecuaciones-Diferenciales-I\Relación 4 (Parte 2)\rel4_parte2.pdf" (3 pages, 128100 bytes).
+Output written on "c:/Users\Arquímedes\Desktop\LaTex\Ecuaciones-Diferenciales-I\Relación 4 (Parte 2)\rel4_parte2.pdf" (5 pages, 140706 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
