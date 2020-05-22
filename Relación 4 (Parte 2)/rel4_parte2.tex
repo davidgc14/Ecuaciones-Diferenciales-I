@@ -375,6 +375,204 @@
 
     \textbf{Ejercicio 10. } \\
 
+    Calculemos la solución como en el apartado anterior, calculando la solución de la homogénea y posteriormente una solución particular.Podemos ver que los valores propios 
+    de $A$ son $\lambda_1=2(1+i)$ y $\lambda_2=2(1-i)$, con vectores propios asociados $V_1 = \begin{pmatrix} -i \\ 2 \end{pmatrix}$ y $V_2 = \begin{pmatrix} i \\ 2 \end{pmatrix}$
+    respectivamente. Para estudiar las soluciones de la homogénea, tomemos un valor propio, por ejemplo $\lambda_1$ y calculemos su solución asociada
+    $$\hat{X}(t) = V_1e^{t\lambda_1} = \begin{pmatrix} -i \\ 2 \end{pmatrix} e^{2t} e^{2ti} = \begin{pmatrix} -i \\ 2 \end{pmatrix} e^{2t} (\cos(2t) + i\sin(2t))=
+    e^{2t} \begin{pmatrix} 
+        -i\cos(2t) + \sin(2t)\\
+        2(\cos(2t) + i\sin(2t))
+    \end{pmatrix}
+    $$
+    $$\Rightarrow \hat{X}(t) = e^{2t}\left[
+    \begin{pmatrix}
+        \sin(2t)\\
+        2\cos(2t)
+    \end{pmatrix}
+    + i
+    \begin{pmatrix}
+        -\cos(2t)\\
+        2\sin(2t)
+    \end{pmatrix}
+    \right]
+    $$
+    Y podemos considerar por ello la solución general dada por 
+    $$
+    X(t) = c_1 e^{2t}
+    \begin{pmatrix}
+        \sin(2t)\\
+        2\cos(2t)
+    \end{pmatrix}
+    + c_2 e^{2t}
+    \begin{pmatrix}
+        -\cos(2t)\\
+        2\sin(2t)
+    \end{pmatrix}
+    +X_p(t), \quad c_1,c_2 \in \R
+    $$
+    Calculemos ahora la solución particular para obtener la solución general del sistema completo. Para ello podemos considerar el resultado obtenido en el ejercicio 7 anteriormente calculado,
+    ya que podemos representar $B(t)=\begin{pmatrix} te^{2t} \\ -e^{2t} \end{pmatrix} = e^{2t}\begin{pmatrix} t \\ -1 \end{pmatrix}$, y como sabemos que ninguno de los dos valores propios vale $2$,
+    podemos calcular la solución particular mediante
+    $$X_p(t) = e^{\alpha t} (\alpha I_2 -A)^{-1} V = e^{2t} (2I_2 - A)^{-1} \begin{pmatrix} t \\ -1 \end{pmatrix} = 
+    e^{2t} 
+    \begin{pmatrix}
+        0 & 1/6 \\
+        1 & 0
+    \end{pmatrix}
+    \begin{pmatrix} t \\ -1 \end{pmatrix} = 
+    e^{2t} \begin{pmatrix} -\frac{1}{6} \\ t \end{pmatrix} 
+    $$
+    Y por tanto hemos conseguido la solución general del problema
+    $$
+    X(t) = c_1 e^{2t}
+    \begin{pmatrix}
+        \sin(2t)\\
+        2\cos(2t)
+    \end{pmatrix}
+    + c_2 e^{2t}
+    \begin{pmatrix}
+        -\cos(2t)\\
+        2\sin(2t)
+    \end{pmatrix}
+    + e^{2t} \begin{pmatrix} -\frac{1}{6} \\ t \end{pmatrix}, \quad c_1,c_2 \in \R
+    $$\\ \\
+
+    \textbf{Ejercicio 11. } \\
     
+    Nos encontramos ante un problema de valores iniciales, para el que necesitaremos primero calcular la solución general del sistema completo para luego aplicarle la condición inicial.
+    Calculemos primero una matriz solución para el sistema homogéneo asociado, para el cual sabemos que las soluciones vienen dadas por $X_k(t)=e^{t\lambda_k}V_k$, donde $\lambda_k$ es un 
+    valor propio de la matriz $A$ y $V_k$ su vector propio asociado. Es fácil calcular sus valores propios $\lambda_1 = 3+5i$ y $\lambda_1 = 3-5i$, con vectores propios asociados
+    $V_1 = \begin{pmatrix} -i\\1 \end{pmatrix}$ y $V_2 = \begin{pmatrix} i\\1 \end{pmatrix}$ respectivamente. Tomemos un valor propio, por ejemplo $\lambda_1$ y calculemos su solución asociada
+
+    $$\hat{X}(t) = V_1e^{t\lambda_1} = \begin{pmatrix} -i \\ 1 \end{pmatrix} e^{3t} e^{5ti} = \begin{pmatrix} -i \\ 1 \end{pmatrix} e^{3t} (\cos(5t) + i\sin(5t))=
+    e^{3t}
+    \begin{pmatrix}
+        -i\cos(5t) + \sin(5t)\\
+        \cos(5t) + i\sin(5t)   
+    \end{pmatrix}    
+    $$
+    $$
+    \Rightarrow \hat{X}(t) = e^{3t} \left[
+    \begin{pmatrix}
+        \sin(5t) \\
+        \cos(5t)
+    \end{pmatrix}
+    +i
+    \begin{pmatrix}
+        -\cos(5t)\\
+        \sin(5t)
+    \end{pmatrix}
+    \right]
+    $$
+    Con lo que podemos considerar la solución general dada por 
+    $$
+    X(t) = 
+    c_1e^{3t}
+    \begin{pmatrix}
+        \sin(5t) \\
+        \cos(5t)
+    \end{pmatrix}
+    +c_2e^{3t}
+    \begin{pmatrix}
+        -\cos(5t)\\
+        \sin(5t)
+    \end{pmatrix}
+    +X_p(t), \quad c_1,c_2 \in \R
+    $$
+    Calculemos ahora una solución particular del sistema completo. Para ello consideremos primero la matriz fundamental dada por 
+    $$\Phi(t)=
+    \begin{pmatrix}
+        e^{3t}\sin(5t) & -e^{3t}\cos(5t)
+        e^{3t}\cos(5t) & e^{3t}\sin(5t)
+    \end{pmatrix}
+    $$
+    Cuyo determinante vemos que es no nulo para todo $t\in\R$, y por tanto sabemos que tiene inversa. Procedemos al cálculo de la particualr, la cual viene dada por la ecuación
+    $$X_p(t) = \Phi(t) \int \Phi^{-1}(t)B(t) \thinspace dt$$
+    $$X_p(t) = \Phi(t) \int 
+    \begin{pmatrix}
+        e^{-3t}\sin(5t) & e^{-3t}\cos(5t)
+        -e^{-3t}\cos(5t) & e^{-3t}\sin(5t)
+    \end{pmatrix}
+    \begin{pmatrix}
+        e^{-t} \\ 0
+    \end{pmatrix}
+    dt = \Phi(t)
+    \begin{pmatrix}
+        e^{-4t}\sin(5t) \\ e^{-4t}\cos(5t)
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        \frac{1}{e^{t}} \\ 0
+    \end{pmatrix}
+    $$
+    Con lo que obtenemos la solución general
+    $$
+    X(t) = 
+    c_1e^{3t}
+    \begin{pmatrix}
+        \sin(5t) \\
+        \cos(5t)
+    \end{pmatrix}
+    +c_2e^{3t}
+    \begin{pmatrix}
+        -\cos(5t)\\
+        \sin(5t)
+    \end{pmatrix}
+    +
+    \begin{pmatrix}
+        \frac{1}{e^{t}} \\ 0
+    \end{pmatrix}
+    , \quad c_1,c_2 \in \R
+    $$
+    Imponemos ahora la condición inicial para poder obtener los valores de $c_1$ y $c_2$ y obtener así la solución al problema de valores iniciados planteado
+    $$X(0)=
+    c_1
+    \begin{pmatrix}
+        0 \\ 1
+    \end{pmatrix}
+    + c_2
+    \begin{pmatrix}
+        -1 \\ 0
+    \end{pmatrix}
+    +
+    \begin{pmatrix}
+        1 \\ 0
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        0 \\ 1
+    \end{pmatrix}
+    \next 
+    \begin{pmatrix}
+        -c_2 +1 \\ c_1
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        0 \\ 1
+    \end{pmatrix}
+    \next c_1=c_2=1
+    $$
+    Y por lo tanto la solución general al problema de valores iniciales planteado es
+    $$
+    X(t) = 
+    e^{3t}
+    \begin{pmatrix}
+        \sin(5t) \\
+        \cos(5t)
+    \end{pmatrix}
+    +e^{3t}
+    \begin{pmatrix}
+        -\cos(5t)\\
+        \sin(5t)
+    \end{pmatrix}
+    +
+    \begin{pmatrix}
+        \frac{1}{e^{t}} \\ 0
+    \end{pmatrix}
+    $$\\ \\
+
+    \textbf{Ejercicio 12. } \\
+
+
 
 \end{document}
